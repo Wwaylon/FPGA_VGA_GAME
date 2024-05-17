@@ -23,7 +23,7 @@ module player(
     //player position buffer
     always@(posedge clk or posedge reset) begin
         if(reset)begin
-            player_pos_x <= 319;
+            player_pos_x <= 295;
             player_pos_y <= 429;
         end
         else begin

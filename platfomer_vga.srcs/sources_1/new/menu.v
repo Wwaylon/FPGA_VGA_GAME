@@ -2,7 +2,8 @@
 module menu(
     input clk, down, up, open_menu, reset,
     input [9:0] x, y,
-    output reg menu_on, menu_text_on
+    output reg menu_on, menu_text_on,
+    output reg game_reset
     );
     
     reg menu_selection =0;
@@ -37,12 +38,12 @@ module menu(
         .in(open_menu_w),
         .rise(open_menu_btn)
     );
-    debounce #(.MAX_COUNT(1)) debounce_up(
+    debounce debounce_up(
         .clk(clk),
         .in(up_w),
         .rise(up_btn)
     );
-    debounce #(.MAX_COUNT(1)) debounce_down(
+    debounce debounce_down(
         .clk(clk),
         .in(down_w),
         .rise(down_btn)
@@ -77,9 +78,16 @@ module menu(
     
     always@(*)
     begin
+        paused_next = paused;
+        menu_selection_next = menu_selection;
+        game_reset <= 0;
         if(open_menu_btn)
+        begin
             paused_next <= ~paused;
-        else if(up_btn && paused)
+            if(paused && menu_selection == 1)
+                game_reset <= 1;
+        end
+        else if((up_btn || down_btn) && paused)
             menu_selection_next <= ~menu_selection;
     end
     

@@ -1,6 +1,5 @@
 module platfomer_top(
-    input wire clk_b, reset, up, down, right, left, open_menu, 
-    input wire [11:0] sw,
+    input wire clk_b, up, down, right, left, open_menu, 
     output wire hsync, vsync,
     output wire [11:0] rgb   
     );
@@ -24,7 +23,11 @@ module platfomer_top(
     reg [11:0] menu_color = 12'h48f;
     wire menu_text_on;
     
-
+    wire fruit_on;
+    wire [11:0] fruit_color;
+    
+    wire game_reset;
+    reg fruit_enable;
     
     //instantiate clks
     clk_wiz_0 clock_instance (
@@ -35,7 +38,7 @@ module platfomer_top(
     // instantiate vga_sync module
     vga_timing vga_timing_unit (
         .clk25mhz(clk_25mhz), 
-        .reset(reset), 
+        .reset(game_reset), 
         .hsync(hsync), 
         .vsync(vsync),
         .active_area(active_area), 
@@ -51,7 +54,8 @@ module platfomer_top(
         .x(x),
         .y(y),
         .menu_on(menu_on),
-        .menu_text_on(menu_text_on)
+        .menu_text_on(menu_text_on),
+        .game_reset(game_reset)
     );
 
     //instantiate score module
@@ -66,7 +70,7 @@ module platfomer_top(
     //instantiate player module 
     player player_unit(
         .clk(clk_100mhz),
-        .reset(reset),
+        .reset(game_reset),
         .right(right),
         .left(left),
         .x(x),
@@ -77,14 +81,30 @@ module platfomer_top(
         .player_on(player_on),
         .player_color_data(player_color_data)
     );
+    
+    // Instantiate fruits module
+    fruits fruits_unit(
+        .clk(clk_100mhz),
+        .en(fruit_enable),  // Enable the fruits generation, can be modified as needed
+        .reset(game_reset),
+        .x(x),
+        .y(y),
+        .fruit_color(fruit_color),
+        .fruit_on(fruit_on)
+    );
    
     
-    always@(posedge clk_100mhz or posedge reset) begin
-        if(reset)begin
+    always@(posedge clk_100mhz or posedge game_reset) begin
+        if(game_reset)begin
             rgb_reg <= 0;
+            fruit_enable <= 0;
         end
         else begin
             rgb_reg <= rgb_next;
+            // Enable fruits when either left or right button is pressed
+            if (left || right) begin
+                fruit_enable <= 1;
+            end 
         end
     end  
     
@@ -109,6 +129,10 @@ module platfomer_top(
         else if(x >= 0 && x < 640 &&  y >= 0 && y <40)
         begin
             rgb_next <= 12'h000;
+        end
+        else if(fruit_on)
+        begin
+            rgb_next <= fruit_color;
         end
         else begin
             rgb_next <= background_color;

@@ -17,11 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param chipscope.maxJobs 3
-set_param synth.incrementalSynthesisCache C:/Users/Waylon/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-2328-DESKTOP-TJMPVE6/incrSyn
 set_param xicom.use_bs_reader 1
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -37,8 +33,13 @@ set_property board_part digilentinc.com:basys3:part0:1.2 [current_project]
 set_property ip_output_repo c:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
+  C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/LFSR_9bit.v
   C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/button_sync.v
+  C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/cherry_rom.v
   C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/debouncer.v
+  C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/fruit.v
+  C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/fruits.v
+  C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/grape_rom.v
   C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/menu.v
   C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/numbers_rom.v
   C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/player.v
@@ -46,6 +47,7 @@ read_verilog -library xil_defaultlib {
   C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/restart_text_rom.v
   C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/resume_text_rom.v
   C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/score.v
+  C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/strawberry_rom.v
   C:/Users/Waylon/Desktop/Code/vga_platformer/VGA_Platformer.srcs/sources_1/new/vga_timing.v
   C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/platfomer_top.v
 }
