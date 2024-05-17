@@ -15,13 +15,13 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 4960 
+INFO: Helper process launched with PID 15592 
 WARNING: [Synth 8-2611] redeclaration of ansi port score_on is not allowed [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/score.v:11]
 WARNING: [Synth 8-976] score_on has already been declared [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/score.v:11]
 WARNING: [Synth 8-2654] second declaration of score_on ignored [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/score.v:11]
 INFO: [Synth 8-994] score_on is declared here [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/score.v:5]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 733.652 ; gain = 202.062
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 735.793 ; gain = 202.859
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'platfomer_top' [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/platfomer_top.v:1]
 INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [c:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v:71]
@@ -70,7 +70,7 @@ INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2019.1/scripts
 INFO: [Synth 8-6155] done synthesizing module 'BUFG' (3#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
 INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0_clk_wiz' (4#1) [c:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:69]
 INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (5#1) [c:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v:71]
-WARNING: [Synth 8-7023] instance 'clock_instance' of module 'clk_wiz_0' has 4 connections declared, but only 3 given [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/platfomer_top.v:33]
+WARNING: [Synth 8-7023] instance 'clock_instance' of module 'clk_wiz_0' has 4 connections declared, but only 3 given [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/platfomer_top.v:34]
 INFO: [Synth 8-6157] synthesizing module 'vga_timing' [C:/Users/Waylon/Desktop/Code/vga_platformer/VGA_Platformer.srcs/sources_1/new/vga_timing.v:1]
 	Parameter full_line bound to: 800 - type: integer 
 	Parameter h_front_porch bound to: 16 - type: integer 
@@ -92,8 +92,586 @@ INFO: [Synth 8-6157] synthesizing module 'debounce' [C:/Users/Waylon/Desktop/Cod
 	Parameter MAX_COUNT bound to: 10 - type: integer 
 	Parameter COUNTER_BITS bound to: 21 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'debounce' (8#1) [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/debouncer.v:1]
-WARNING: [Synth 8-7023] instance 'debounce_open_menu' of module 'debounce' has 6 connections declared, but only 3 given [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/menu.v:36]
-WARNING: [Synth 8-7023] instance 'debounce_up' of module 'debounce' has 6 connections declared, but only 3 given [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/menu.v:41]
-WARNING: [Synth 8-7023] instance 'debounce_down' of module 'debounce' has 6 connections declared, but only 3 given [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/menu.v:46]
+WARNING: [Synth 8-7023] instance 'debounce_open_menu' of module 'debounce' has 6 connections declared, but only 3 given [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/menu.v:37]
+WARNING: [Synth 8-7023] instance 'debounce_up' of module 'debounce' has 6 connections declared, but only 3 given [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/menu.v:42]
+WARNING: [Synth 8-7023] instance 'debounce_down' of module 'debounce' has 6 connections declared, but only 3 given [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/menu.v:47]
 INFO: [Synth 8-6157] synthesizing module 'restart_rom' [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/restart_text_rom.v:1]
 INFO: [Synth 8-5534] Detected attribute (* rom_style = "block" *) [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/restart_text_rom.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'restart_rom' (9#1) [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/restart_text_rom.v:1]
+INFO: [Synth 8-6157] synthesizing module 'resume_rom' [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/resume_text_rom.v:1]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "block" *) [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/resume_text_rom.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'resume_rom' (10#1) [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/resume_text_rom.v:1]
+WARNING: [Synth 8-6090] variable 'paused_next' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/menu.v:79]
+WARNING: [Synth 8-6090] variable 'menu_selection_next' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/menu.v:83]
+WARNING: [Synth 8-6090] variable 'menu_selection_next' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/menu.v:87]
+INFO: [Synth 8-6155] done synthesizing module 'menu' (11#1) [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/menu.v:2]
+INFO: [Synth 8-6157] synthesizing module 'score' [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/score.v:1]
+INFO: [Synth 8-6157] synthesizing module 'numbers_rom' [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/numbers_rom.v:1]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "block" *) [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/numbers_rom.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'numbers_rom' (12#1) [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/numbers_rom.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'score' (13#1) [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/score.v:1]
+INFO: [Synth 8-6157] synthesizing module 'player' [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/player.v:1]
+INFO: [Synth 8-6157] synthesizing module 'player_rom' [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/player_rom.v:1]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "block" *) [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/player_rom.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'player_rom' (14#1) [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/player_rom.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'player' (15#1) [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/player.v:1]
+INFO: [Synth 8-6157] synthesizing module 'fruits' [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/fruits.v:1]
+INFO: [Synth 8-6157] synthesizing module 'grape_rom' [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/grape_rom.v:1]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "block" *) [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/grape_rom.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'grape_rom' (16#1) [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/grape_rom.v:1]
+INFO: [Synth 8-6157] synthesizing module 'strawberry_rom' [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/strawberry_rom.v:1]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "block" *) [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/strawberry_rom.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'strawberry_rom' (17#1) [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/strawberry_rom.v:1]
+INFO: [Synth 8-6157] synthesizing module 'cherry_rom' [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/cherry_rom.v:1]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "block" *) [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/cherry_rom.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'cherry_rom' (18#1) [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/cherry_rom.v:1]
+INFO: [Synth 8-6157] synthesizing module 'apple_rom' [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/apple_rom.v:1]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "block" *) [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/apple_rom.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'apple_rom' (19#1) [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/apple_rom.v:1]
+INFO: [Synth 8-6157] synthesizing module 'fruit' [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/fruit.v:1]
+INFO: [Synth 8-6157] synthesizing module 'LFSR_9Bit' [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/LFSR_9bit.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'LFSR_9Bit' (20#1) [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/LFSR_9bit.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'fruit' (21#1) [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/fruit.v:1]
+WARNING: [Synth 8-689] width (10) of port connection 'distance' does not match port width (9) of module 'fruit' [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/fruits.v:85]
+WARNING: [Synth 8-689] width (10) of port connection 'distance' does not match port width (9) of module 'fruit' [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/fruits.v:97]
+WARNING: [Synth 8-689] width (10) of port connection 'distance' does not match port width (9) of module 'fruit' [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/fruits.v:109]
+INFO: [Synth 8-6155] done synthesizing module 'fruits' (22#1) [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/fruits.v:1]
+WARNING: [Synth 8-3848] Net score in module/entity platfomer_top does not have driver. [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/platfomer_top.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'platfomer_top' (23#1) [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/platfomer_top.v:1]
+WARNING: [Synth 8-3331] design score has unconnected port score[13]
+WARNING: [Synth 8-3331] design score has unconnected port score[12]
+WARNING: [Synth 8-3331] design score has unconnected port score[11]
+WARNING: [Synth 8-3331] design score has unconnected port score[10]
+WARNING: [Synth 8-3331] design score has unconnected port score[9]
+WARNING: [Synth 8-3331] design score has unconnected port score[8]
+WARNING: [Synth 8-3331] design score has unconnected port score[7]
+WARNING: [Synth 8-3331] design score has unconnected port score[6]
+WARNING: [Synth 8-3331] design score has unconnected port score[5]
+WARNING: [Synth 8-3331] design score has unconnected port score[4]
+WARNING: [Synth 8-3331] design score has unconnected port score[3]
+WARNING: [Synth 8-3331] design score has unconnected port score[2]
+WARNING: [Synth 8-3331] design score has unconnected port score[1]
+WARNING: [Synth 8-3331] design score has unconnected port score[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 875.914 ; gain = 342.980
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 875.914 ; gain = 342.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 875.914 ; gain = 342.980
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clock_instance/inst'
+Finished Parsing XDC File [c:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clock_instance/inst'
+Parsing XDC File [c:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clock_instance/inst'
+Finished Parsing XDC File [c:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clock_instance/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/platfomer_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/platfomer_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Users/Waylon/Desktop/Code/vga_platformer/VGA_Platformer.srcs/constrs_1/new/basys3_constraint.xdc]
+WARNING: [Vivado 12-507] No nets matched 'open_menu_IBUF'. [C:/Users/Waylon/Desktop/Code/vga_platformer/VGA_Platformer.srcs/constrs_1/new/basys3_constraint.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Waylon/Desktop/Code/vga_platformer/VGA_Platformer.srcs/constrs_1/new/basys3_constraint.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/Waylon/Desktop/Code/vga_platformer/VGA_Platformer.srcs/constrs_1/new/basys3_constraint.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Waylon/Desktop/Code/vga_platformer/VGA_Platformer.srcs/constrs_1/new/basys3_constraint.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/platfomer_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/platfomer_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/platfomer_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/platfomer_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 962.711 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 962.711 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 962.711 ; gain = 429.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 962.711 ; gain = 429.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for clock_instance/inst. (constraint file  C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.runs/synth_1/dont_touch.xdc, line 10).
+Applied set_property DONT_TOUCH = true for clock_instance. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 962.711 ; gain = 429.777
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/player.v:42]
+WARNING: [Synth 8-327] inferring latch for variable 'resume_row_reg' [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/menu.v:61]
+WARNING: [Synth 8-327] inferring latch for variable 'resume_col_reg' [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/menu.v:62]
+WARNING: [Synth 8-327] inferring latch for variable 'restart_row_reg' [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/menu.v:55]
+WARNING: [Synth 8-327] inferring latch for variable 'restart_col_reg' [C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/menu.v:56]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 962.711 ; gain = 429.777
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   2 Input     21 Bit       Adders := 3     
+	   3 Input     12 Bit       Adders := 9     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 19    
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 3     
+	   3 Input      6 Bit       Adders := 10    
++---XORs : 
+	   2 Input      1 Bit         XORs := 7     
++---Registers : 
+	               21 Bit    Registers := 3     
+	               15 Bit    Registers := 2     
+	               12 Bit    Registers := 7     
+	               10 Bit    Registers := 20    
+	                9 Bit    Registers := 4     
+	                3 Bit    Registers := 3     
+	                1 Bit    Registers := 19    
++---ROMs : 
+	                              ROMs := 8     
++---Muxes : 
+	   2 Input     21 Bit        Muxes := 3     
+	   2 Input     12 Bit        Muxes := 9     
+	   2 Input     10 Bit        Muxes := 12    
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 14    
+	   5 Input      6 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module platfomer_top 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module vga_timing 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
+Module button_sync 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+Module debounce 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     21 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               21 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     21 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module restart_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               15 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module resume_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               15 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module menu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 3     
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module numbers_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module score 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+Module player_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module player 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 1     
+	   3 Input      6 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module grape_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module strawberry_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module cherry_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module apple_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module LFSR_9Bit 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                9 Bit    Registers := 1     
+Module fruit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 4     
++---Registers : 
+	               10 Bit    Registers := 4     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 1     
+Module fruits 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     12 Bit       Adders := 8     
+	   3 Input      6 Bit       Adders := 8     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 8     
+	   5 Input      6 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 12    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fruits_unit/f1/x_pos_reg[9] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\player_unit/player_pos_y_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\player_unit/player_pos_y_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\player_unit/player_pos_y_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\player_unit/player_pos_y_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\player_unit/player_pos_y_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\player_unit/player_pos_y_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\player_unit/player_pos_y_reg[6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\player_unit/player_pos_y_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\player_unit/player_pos_y_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\player_unit/player_pos_y_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fruits_unit/f2/x_pos_reg[9] )
+INFO: [Synth 8-3886] merging instance 'rgb_reg_reg[0]' (FDC) to 'rgb_reg_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fruits_unit/f3/x_pos_reg[9] )
+INFO: [Synth 8-3886] merging instance 'fruits_unit/f2/x_reg[9]' (FDC) to 'fruits_unit/f3/x_reg[9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fruits_unit/f4/x_pos_reg[9] )
+INFO: [Synth 8-3886] merging instance 'fruits_unit/f3/x_reg[9]' (FDC) to 'fruits_unit/f4/x_reg[9]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:00:52 . Memory (MB): peak = 962.711 ; gain = 429.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++--------------+------------+---------------+----------------+
+|Module Name   | RTL Object | Depth x Width | Implemented As | 
++--------------+------------+---------------+----------------+
+|fruits        | sel        | 4096x5        | Block RAM      | 
+|fruits        | sel        | 4096x3        | Block RAM      | 
+|fruits        | sel        | 4096x4        | Block RAM      | 
+|fruits        | sel        | 4096x7        | Block RAM      | 
+|platfomer_top | sel        | 32768x1       | Block RAM      | 
+|platfomer_top | sel        | 32768x1       | Block RAM      | 
+|platfomer_top | sel        | 4096x1        | Block RAM      | 
+|platfomer_top | sel        | 4096x6        | Block RAM      | 
++--------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance i_0/fruits_unit/sel (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_1/fruits_unit/sel (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_2/fruits_unit/sel (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_3/fruits_unit/sel (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_4/sel (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_5/sel (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_6/sel (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_7/sel (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:03 ; elapsed = 00:01:04 . Memory (MB): peak = 962.711 ; gain = 429.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:07 ; elapsed = 00:01:08 . Memory (MB): peak = 999.445 ; gain = 466.512
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance fruits_unit/sel (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance fruits_unit/sel__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance fruits_unit/sel__1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance fruits_unit/sel__2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance sel (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance sel__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance sel__1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance sel__2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:08 ; elapsed = 00:01:09 . Memory (MB): peak = 1000.477 ; gain = 467.543
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3295] tying undriven pin clock_instance:reset to constant 0
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:10 ; elapsed = 00:01:11 . Memory (MB): peak = 1001.309 ; gain = 468.375
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:10 ; elapsed = 00:01:11 . Memory (MB): peak = 1001.309 ; gain = 468.375
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:11 ; elapsed = 00:01:11 . Memory (MB): peak = 1001.309 ; gain = 468.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:11 ; elapsed = 00:01:11 . Memory (MB): peak = 1001.309 ; gain = 468.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:11 ; elapsed = 00:01:11 . Memory (MB): peak = 1001.316 ; gain = 468.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:11 ; elapsed = 00:01:11 . Memory (MB): peak = 1001.316 ; gain = 468.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     3|
+|2     |CARRY4     |   114|
+|3     |LUT1       |    11|
+|4     |LUT2       |   223|
+|5     |LUT3       |    78|
+|6     |LUT4       |   284|
+|7     |LUT5       |   129|
+|8     |LUT6       |   169|
+|9     |PLLE2_ADV  |     1|
+|10    |RAMB18E1   |     1|
+|11    |RAMB18E1_1 |     1|
+|12    |RAMB18E1_2 |     1|
+|13    |RAMB36E1   |     1|
+|14    |RAMB36E1_1 |     1|
+|15    |RAMB36E1_2 |     1|
+|16    |RAMB36E1_3 |     1|
+|17    |RAMB36E1_4 |     1|
+|18    |FDCE       |   157|
+|19    |FDPE       |    41|
+|20    |FDRE       |   112|
+|21    |FDSE       |     4|
+|22    |LD         |    30|
+|23    |IBUF       |     6|
+|24    |OBUF       |    14|
++------+-----------+------+
+
+Report Instance Areas: 
++------+-----------------------+------------------+------+
+|      |Instance               |Module            |Cells |
++------+-----------------------+------------------+------+
+|1     |top                    |                  |  1384|
+|2     |  clock_instance       |clk_wiz_0         |     5|
+|3     |    inst               |clk_wiz_0_clk_wiz |     5|
+|4     |  fruits_unit          |fruits            |   738|
+|5     |    f1                 |fruit             |   163|
+|6     |      lfsr_inst        |LFSR_9Bit_9       |    48|
+|7     |    f2                 |fruit_4           |   156|
+|8     |      lfsr_inst        |LFSR_9Bit_8       |    49|
+|9     |    f3                 |fruit_5           |   157|
+|10    |      lfsr_inst        |LFSR_9Bit_7       |    50|
+|11    |    f4                 |fruit_6           |   143|
+|12    |      lfsr_inst        |LFSR_9Bit         |    50|
+|13    |  menu_unit            |menu              |   160|
+|14    |    b1                 |button_sync       |     3|
+|15    |    b2                 |button_sync_0     |     3|
+|16    |    b3                 |button_sync_1     |     3|
+|17    |    debounce_down      |debounce          |    38|
+|18    |    debounce_open_menu |debounce_2        |    41|
+|19    |    debounce_up        |debounce_3        |    38|
+|20    |  player_unit          |player            |    78|
+|21    |  vga_timing_unit      |vga_timing        |   367|
++------+-----------------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:11 ; elapsed = 00:01:11 . Memory (MB): peak = 1001.316 ; gain = 468.383
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:55 ; elapsed = 00:01:08 . Memory (MB): peak = 1001.316 ; gain = 381.586
+Synthesis Optimization Complete : Time (s): cpu = 00:01:11 ; elapsed = 00:01:12 . Memory (MB): peak = 1001.316 ; gain = 468.383
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 153 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1013.406 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 30 instances were transformed.
+  LD => LDCE: 30 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+107 Infos, 34 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:17 ; elapsed = 00:01:19 . Memory (MB): peak = 1013.406 ; gain = 722.473
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1013.406 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.runs/synth_1/platfomer_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file platfomer_top_utilization_synth.rpt -pb platfomer_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu May 16 23:12:02 2024...

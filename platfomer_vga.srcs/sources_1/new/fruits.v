@@ -11,6 +11,7 @@ module fruits(
     wire [9:0] f1_pos_x, f1_pos_y; 
     wire [9:0] f2_pos_x, f2_pos_y;
     wire [9:0] f3_pos_x, f3_pos_y;
+    wire [9:0] f4_pos_x, f4_pos_y;
     
     reg [5:0] grape_row;
     reg [5:0] grape_col;
@@ -42,13 +43,25 @@ module fruits(
        .color_data(cherry_color_data)
     );
     
+    reg [5:0] apple_row;
+    reg [5:0] apple_col;
+    wire [11:0] apple_color_data;
+    apple_rom apple_rom(
+       .clk(clk),
+       .row(apple_row),
+       .col(apple_col),
+       .color_data(apple_color_data)
+    );
+    
     assign fruit_on = (x >= f1_pos_x && x < f1_pos_x + 50 && y >= f1_pos_y && y < f1_pos_y + 50) 
                    || (x >= f2_pos_x && x < f2_pos_x + 50 && y >= f2_pos_y && y < f2_pos_y + 50)
-                   || (x >= f3_pos_x && x < f3_pos_x + 50 && y >= f3_pos_y && y < f3_pos_y + 50);
+                   || (x >= f3_pos_x && x < f3_pos_x + 50 && y >= f3_pos_y && y < f3_pos_y + 50)
+                   || (x >= f4_pos_x && x < f4_pos_x + 50 && y >= f4_pos_y && y < f4_pos_y + 50);
                    
     assign fruit_color = (x >= f1_pos_x && x < f1_pos_x + 50 && y >= f1_pos_y && y < f1_pos_y + 50) ? (grape_color_data == 12'hFFF ? 12'hABF : grape_color_data ) 
                       : (x >= f2_pos_x && x < f2_pos_x + 50 && y >= f2_pos_y && y < f2_pos_y + 50) ? (strawberry_color_data == 12'hfff ? 12'hABF : strawberry_color_data )
                       : (x >= f3_pos_x && x < f3_pos_x + 50 && y >= f3_pos_y && y < f3_pos_y + 50) ? (cherry_color_data == 12'hfff ? 12'hABF : cherry_color_data )
+                      : (x >= f4_pos_x && x < f4_pos_x + 50 && y >= f4_pos_y && y < f4_pos_y + 50) ? (apple_color_data == 12'hfff ? 12'hABF : apple_color_data )
                       : 12'h000;
     
     fruit f1(
@@ -87,6 +100,18 @@ module fruits(
         .y(f3_pos_y)
     );
     
+    fruit f4(
+        .clk(clk),
+        .en(en),
+        .reset(reset),
+        .refresh_tick(refresh_tick),
+        .order(3'b011),
+        .distance(f1_pos_y),
+        .prev_x(f3_pos_x),
+        .x(f4_pos_x),
+        .y(f4_pos_y)
+    );
+    
     always @(*) begin
         cherry_row <= 0;
         cherry_col <= 0;
@@ -94,6 +119,8 @@ module fruits(
         strawberry_col <= 0;
         grape_row <= 0;
         grape_col <= 0;
+        apple_row <= 0;
+        apple_col <= 0;
         
         if(x >= f1_pos_x && x < f1_pos_x + 50 && y >= f1_pos_y && y < f1_pos_y + 50) begin
             grape_col <= x - f1_pos_x;
@@ -104,6 +131,9 @@ module fruits(
         end else if(x >= f3_pos_x && x < f3_pos_x + 50 && y >= f3_pos_y && y < f3_pos_y + 50) begin
             cherry_col <= x - f3_pos_x;
             cherry_row <= y - f3_pos_y;
+        end else if(x >= f4_pos_x && x < f4_pos_x + 50 && y >= f4_pos_y && y < f4_pos_y + 50) begin
+            apple_col <= x - f4_pos_x;
+            apple_row <= y - f4_pos_y;
         end
     end
 endmodule

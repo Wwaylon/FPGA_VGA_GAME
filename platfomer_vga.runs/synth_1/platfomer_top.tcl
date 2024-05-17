@@ -17,6 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param chipscope.maxJobs 3
 set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a35tcpg236-1
 
@@ -34,6 +35,7 @@ set_property ip_output_repo c:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
   C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/LFSR_9bit.v
+  C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/apple_rom.v
   C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/button_sync.v
   C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/cherry_rom.v
   C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/debouncer.v

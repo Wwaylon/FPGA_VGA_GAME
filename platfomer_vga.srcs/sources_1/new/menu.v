@@ -1,9 +1,10 @@
 
 module menu(
-    input clk, down, up, open_menu, reset,
+    input clk, down, up, open_menu,
     input [9:0] x, y,
     output reg menu_on, menu_text_on,
-    output reg game_reset
+    output reg game_reset, 
+    output wire game_pause
     );
     
     reg menu_selection =0;
@@ -62,18 +63,10 @@ module menu(
         .color_data(resume_color_data)
     );
     
-    always@(posedge clk or posedge reset)
+    always@(posedge clk)
     begin
-        if(reset)
-        begin
-            paused <= 0;
-            menu_selection <= 0;
-        end
-        else 
-        begin
-            paused<=paused_next;
-            menu_selection<=menu_selection_next;
-        end
+        paused<=paused_next;
+        menu_selection<=menu_selection_next;
     end
     
     always@(*)
@@ -85,7 +78,10 @@ module menu(
         begin
             paused_next <= ~paused;
             if(paused && menu_selection == 1)
+            begin
                 game_reset <= 1;
+                menu_selection_next <= 0;
+            end
         end
         else if((up_btn || down_btn) && paused)
             menu_selection_next <= ~menu_selection;
@@ -111,6 +107,8 @@ module menu(
             menu_text_on <= ~restart_color_data;
         end
     end
+    
+    assign game_pause = paused;
     
    
 endmodule

@@ -27,6 +27,7 @@ module platfomer_top(
     wire [11:0] fruit_color;
     
     wire game_reset;
+    wire game_pause;
     reg fruit_enable;
     
     //instantiate clks
@@ -50,12 +51,12 @@ module platfomer_top(
         .down(down),
         .up(up),
         .open_menu(open_menu),
-        .reset(reset),
         .x(x),
         .y(y),
         .menu_on(menu_on),
         .menu_text_on(menu_text_on),
-        .game_reset(game_reset)
+        .game_reset(game_reset),
+        .game_pause(game_pause)
     );
 
     //instantiate score module
@@ -73,6 +74,7 @@ module platfomer_top(
         .reset(game_reset),
         .right(right),
         .left(left),
+        .game_pause(game_pause),
         .x(x),
         .y(y),
         .background_color(background_color),
@@ -102,9 +104,10 @@ module platfomer_top(
         else begin
             rgb_reg <= rgb_next;
             // Enable fruits when either left or right button is pressed
-            if (left || right) begin
+            if(game_pause)
+                fruit_enable <= 0;
+            else if (left || right)
                 fruit_enable <= 1;
-            end 
         end
     end  
     
