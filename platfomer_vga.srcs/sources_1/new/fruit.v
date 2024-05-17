@@ -30,7 +30,7 @@ module fruit(
             end else if (refresh_tick) begin
                 y_pos <= y_pos + 1; // Increment position based on speed
             end
-            if (first_run && distance == (160 * order)) begin
+            if (first_run && distance == (96 * order)) begin
                 first_run <= 0;
             end
         end

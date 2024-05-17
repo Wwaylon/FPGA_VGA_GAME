@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Thu May 16 23:13:28 2024
+| Date         : Fri May 17 01:11:41 2024
 | Host         : DESKTOP-TJMPVE6 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file platfomer_top_methodology_drc_routed.rpt -pb platfomer_top_methodology_drc_routed.pb -rpx platfomer_top_methodology_drc_routed.rpx
 | Design       : platfomer_top
@@ -23,15 +23,15 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 57
+             Violations found: 69
 +-----------+------------------+------------------------------------------------+------------+
 | Rule      | Severity         | Description                                    | Violations |
 +-----------+------------------+------------------------------------------------+------------+
 | TIMING-6  | Critical Warning | No common primary clock between related clocks | 8          |
 | LUTAR-1   | Warning          | LUT drives async reset alert                   | 1          |
-| SYNTH-6   | Warning          | Timing of a block RAM might be sub-optimal     | 1          |
+| SYNTH-6   | Warning          | Timing of a block RAM might be sub-optimal     | 3          |
 | TIMING-18 | Warning          | Missing input or output delay                  | 17         |
-| TIMING-20 | Warning          | Non-clocked latch                              | 30         |
+| TIMING-20 | Warning          | Non-clocked latch                              | 40         |
 +-----------+------------------+------------------------------------------------+------------+
 
 2. REPORT DETAILS
@@ -78,12 +78,22 @@ Related violations: <none>
 
 LUTAR-1#1 Warning
 LUT drives async reset alert  
-LUT cell menu_unit/debounce_open_menu/lfsr[8]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) fruits_unit/f1/x_pos_reg[0]/CLR, fruits_unit/f1/x_pos_reg[1]/CLR, fruits_unit/f1/x_pos_reg[2]/CLR, fruits_unit/f1/x_pos_reg[3]/CLR, fruits_unit/f1/x_pos_reg[4]/CLR, fruits_unit/f1/x_pos_reg[5]/CLR, fruits_unit/f1/x_pos_reg[6]/CLR, fruits_unit/f1/x_pos_reg[7]/CLR, fruits_unit/f1/x_pos_reg[8]/CLR, fruits_unit/f1/x_reg[0]/CLR, fruits_unit/f1/x_reg[1]/CLR, fruits_unit/f1/x_reg[2]/CLR, fruits_unit/f1/x_reg[3]/CLR, fruits_unit/f1/x_reg[4]/CLR, fruits_unit/f1/x_reg[5]/CLR (the first 15 of 198 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell menu_unit/debounce_open_menu/h_pos[9]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) collision_detector/score_reg[0]/CLR, collision_detector/score_reg[1]/CLR, collision_detector/score_reg[2]/CLR, collision_detector/score_reg[3]/CLR, collision_detector/score_reg[4]/CLR, collision_detector/score_reg[5]/CLR, collision_detector/score_reg[6]/CLR, collision_detector/score_reg[7]/CLR, collision_detector/score_reg[8]/CLR, collision_detector/score_reg[9]/CLR, fruits_unit/f1/x_pos_reg[0]/CLR, fruits_unit/f1/x_pos_reg[1]/CLR, fruits_unit/f1/x_pos_reg[2]/CLR, fruits_unit/f1/x_pos_reg[3]/CLR, fruits_unit/f1/x_pos_reg[4]/CLR (the first 15 of 208 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 SYNTH-6#1 Warning
 Timing of a block RAM might be sub-optimal  
 The timing for the instance fruits_unit/sel, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#2 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance fruits_unit/sel__0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#3 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance fruits_unit/sel__1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 TIMING-18#1 Warning
@@ -173,150 +183,200 @@ Related violations: <none>
 
 TIMING-20#1 Warning
 Non-clocked latch  
-The latch menu_unit/restart_col_reg[0] cannot be properly analyzed as its control pin menu_unit/restart_col_reg[0]/G is not reached by a timing clock
+The latch collision_detector/score_reg[0] cannot be properly analyzed as its control pin collision_detector/score_reg[0]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#2 Warning
 Non-clocked latch  
-The latch menu_unit/restart_col_reg[1] cannot be properly analyzed as its control pin menu_unit/restart_col_reg[1]/G is not reached by a timing clock
+The latch collision_detector/score_reg[1] cannot be properly analyzed as its control pin collision_detector/score_reg[1]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#3 Warning
 Non-clocked latch  
-The latch menu_unit/restart_col_reg[2] cannot be properly analyzed as its control pin menu_unit/restart_col_reg[2]/G is not reached by a timing clock
+The latch collision_detector/score_reg[2] cannot be properly analyzed as its control pin collision_detector/score_reg[2]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#4 Warning
 Non-clocked latch  
-The latch menu_unit/restart_col_reg[3] cannot be properly analyzed as its control pin menu_unit/restart_col_reg[3]/G is not reached by a timing clock
+The latch collision_detector/score_reg[3] cannot be properly analyzed as its control pin collision_detector/score_reg[3]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#5 Warning
 Non-clocked latch  
-The latch menu_unit/restart_col_reg[4] cannot be properly analyzed as its control pin menu_unit/restart_col_reg[4]/G is not reached by a timing clock
+The latch collision_detector/score_reg[4] cannot be properly analyzed as its control pin collision_detector/score_reg[4]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#6 Warning
 Non-clocked latch  
-The latch menu_unit/restart_col_reg[5] cannot be properly analyzed as its control pin menu_unit/restart_col_reg[5]/G is not reached by a timing clock
+The latch collision_detector/score_reg[5] cannot be properly analyzed as its control pin collision_detector/score_reg[5]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#7 Warning
 Non-clocked latch  
-The latch menu_unit/restart_col_reg[6] cannot be properly analyzed as its control pin menu_unit/restart_col_reg[6]/G is not reached by a timing clock
+The latch collision_detector/score_reg[6] cannot be properly analyzed as its control pin collision_detector/score_reg[6]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#8 Warning
 Non-clocked latch  
-The latch menu_unit/restart_col_reg[7] cannot be properly analyzed as its control pin menu_unit/restart_col_reg[7]/G is not reached by a timing clock
+The latch collision_detector/score_reg[7] cannot be properly analyzed as its control pin collision_detector/score_reg[7]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#9 Warning
 Non-clocked latch  
-The latch menu_unit/restart_row_reg[0] cannot be properly analyzed as its control pin menu_unit/restart_row_reg[0]/G is not reached by a timing clock
+The latch collision_detector/score_reg[8] cannot be properly analyzed as its control pin collision_detector/score_reg[8]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#10 Warning
 Non-clocked latch  
-The latch menu_unit/restart_row_reg[1] cannot be properly analyzed as its control pin menu_unit/restart_row_reg[1]/G is not reached by a timing clock
+The latch collision_detector/score_reg[9] cannot be properly analyzed as its control pin collision_detector/score_reg[9]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#11 Warning
 Non-clocked latch  
-The latch menu_unit/restart_row_reg[2] cannot be properly analyzed as its control pin menu_unit/restart_row_reg[2]/G is not reached by a timing clock
+The latch menu_unit/restart_col_reg[0] cannot be properly analyzed as its control pin menu_unit/restart_col_reg[0]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#12 Warning
 Non-clocked latch  
-The latch menu_unit/restart_row_reg[3] cannot be properly analyzed as its control pin menu_unit/restart_row_reg[3]/G is not reached by a timing clock
+The latch menu_unit/restart_col_reg[1] cannot be properly analyzed as its control pin menu_unit/restart_col_reg[1]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#13 Warning
 Non-clocked latch  
-The latch menu_unit/restart_row_reg[4] cannot be properly analyzed as its control pin menu_unit/restart_row_reg[4]/G is not reached by a timing clock
+The latch menu_unit/restart_col_reg[2] cannot be properly analyzed as its control pin menu_unit/restart_col_reg[2]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#14 Warning
 Non-clocked latch  
-The latch menu_unit/restart_row_reg[5] cannot be properly analyzed as its control pin menu_unit/restart_row_reg[5]/G is not reached by a timing clock
+The latch menu_unit/restart_col_reg[3] cannot be properly analyzed as its control pin menu_unit/restart_col_reg[3]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#15 Warning
 Non-clocked latch  
-The latch menu_unit/restart_row_reg[6] cannot be properly analyzed as its control pin menu_unit/restart_row_reg[6]/G is not reached by a timing clock
+The latch menu_unit/restart_col_reg[4] cannot be properly analyzed as its control pin menu_unit/restart_col_reg[4]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#16 Warning
 Non-clocked latch  
-The latch menu_unit/resume_col_reg[0] cannot be properly analyzed as its control pin menu_unit/resume_col_reg[0]/G is not reached by a timing clock
+The latch menu_unit/restart_col_reg[5] cannot be properly analyzed as its control pin menu_unit/restart_col_reg[5]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#17 Warning
 Non-clocked latch  
-The latch menu_unit/resume_col_reg[1] cannot be properly analyzed as its control pin menu_unit/resume_col_reg[1]/G is not reached by a timing clock
+The latch menu_unit/restart_col_reg[6] cannot be properly analyzed as its control pin menu_unit/restart_col_reg[6]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#18 Warning
 Non-clocked latch  
-The latch menu_unit/resume_col_reg[2] cannot be properly analyzed as its control pin menu_unit/resume_col_reg[2]/G is not reached by a timing clock
+The latch menu_unit/restart_col_reg[7] cannot be properly analyzed as its control pin menu_unit/restart_col_reg[7]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#19 Warning
 Non-clocked latch  
-The latch menu_unit/resume_col_reg[3] cannot be properly analyzed as its control pin menu_unit/resume_col_reg[3]/G is not reached by a timing clock
+The latch menu_unit/restart_row_reg[0] cannot be properly analyzed as its control pin menu_unit/restart_row_reg[0]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#20 Warning
 Non-clocked latch  
-The latch menu_unit/resume_col_reg[4] cannot be properly analyzed as its control pin menu_unit/resume_col_reg[4]/G is not reached by a timing clock
+The latch menu_unit/restart_row_reg[1] cannot be properly analyzed as its control pin menu_unit/restart_row_reg[1]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#21 Warning
 Non-clocked latch  
-The latch menu_unit/resume_col_reg[5] cannot be properly analyzed as its control pin menu_unit/resume_col_reg[5]/G is not reached by a timing clock
+The latch menu_unit/restart_row_reg[2] cannot be properly analyzed as its control pin menu_unit/restart_row_reg[2]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#22 Warning
 Non-clocked latch  
-The latch menu_unit/resume_col_reg[6] cannot be properly analyzed as its control pin menu_unit/resume_col_reg[6]/G is not reached by a timing clock
+The latch menu_unit/restart_row_reg[3] cannot be properly analyzed as its control pin menu_unit/restart_row_reg[3]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#23 Warning
 Non-clocked latch  
-The latch menu_unit/resume_col_reg[7] cannot be properly analyzed as its control pin menu_unit/resume_col_reg[7]/G is not reached by a timing clock
+The latch menu_unit/restart_row_reg[4] cannot be properly analyzed as its control pin menu_unit/restart_row_reg[4]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#24 Warning
 Non-clocked latch  
-The latch menu_unit/resume_row_reg[0] cannot be properly analyzed as its control pin menu_unit/resume_row_reg[0]/G is not reached by a timing clock
+The latch menu_unit/restart_row_reg[5] cannot be properly analyzed as its control pin menu_unit/restart_row_reg[5]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#25 Warning
 Non-clocked latch  
-The latch menu_unit/resume_row_reg[1] cannot be properly analyzed as its control pin menu_unit/resume_row_reg[1]/G is not reached by a timing clock
+The latch menu_unit/restart_row_reg[6] cannot be properly analyzed as its control pin menu_unit/restart_row_reg[6]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#26 Warning
 Non-clocked latch  
-The latch menu_unit/resume_row_reg[2] cannot be properly analyzed as its control pin menu_unit/resume_row_reg[2]/G is not reached by a timing clock
+The latch menu_unit/resume_col_reg[0] cannot be properly analyzed as its control pin menu_unit/resume_col_reg[0]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#27 Warning
 Non-clocked latch  
-The latch menu_unit/resume_row_reg[3] cannot be properly analyzed as its control pin menu_unit/resume_row_reg[3]/G is not reached by a timing clock
+The latch menu_unit/resume_col_reg[1] cannot be properly analyzed as its control pin menu_unit/resume_col_reg[1]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#28 Warning
 Non-clocked latch  
-The latch menu_unit/resume_row_reg[4] cannot be properly analyzed as its control pin menu_unit/resume_row_reg[4]/G is not reached by a timing clock
+The latch menu_unit/resume_col_reg[2] cannot be properly analyzed as its control pin menu_unit/resume_col_reg[2]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#29 Warning
 Non-clocked latch  
-The latch menu_unit/resume_row_reg[5] cannot be properly analyzed as its control pin menu_unit/resume_row_reg[5]/G is not reached by a timing clock
+The latch menu_unit/resume_col_reg[3] cannot be properly analyzed as its control pin menu_unit/resume_col_reg[3]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#30 Warning
+Non-clocked latch  
+The latch menu_unit/resume_col_reg[4] cannot be properly analyzed as its control pin menu_unit/resume_col_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#31 Warning
+Non-clocked latch  
+The latch menu_unit/resume_col_reg[5] cannot be properly analyzed as its control pin menu_unit/resume_col_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#32 Warning
+Non-clocked latch  
+The latch menu_unit/resume_col_reg[6] cannot be properly analyzed as its control pin menu_unit/resume_col_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#33 Warning
+Non-clocked latch  
+The latch menu_unit/resume_col_reg[7] cannot be properly analyzed as its control pin menu_unit/resume_col_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#34 Warning
+Non-clocked latch  
+The latch menu_unit/resume_row_reg[0] cannot be properly analyzed as its control pin menu_unit/resume_row_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#35 Warning
+Non-clocked latch  
+The latch menu_unit/resume_row_reg[1] cannot be properly analyzed as its control pin menu_unit/resume_row_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#36 Warning
+Non-clocked latch  
+The latch menu_unit/resume_row_reg[2] cannot be properly analyzed as its control pin menu_unit/resume_row_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#37 Warning
+Non-clocked latch  
+The latch menu_unit/resume_row_reg[3] cannot be properly analyzed as its control pin menu_unit/resume_row_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#38 Warning
+Non-clocked latch  
+The latch menu_unit/resume_row_reg[4] cannot be properly analyzed as its control pin menu_unit/resume_row_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#39 Warning
+Non-clocked latch  
+The latch menu_unit/resume_row_reg[5] cannot be properly analyzed as its control pin menu_unit/resume_row_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#40 Warning
 Non-clocked latch  
 The latch menu_unit/resume_row_reg[6] cannot be properly analyzed as its control pin menu_unit/resume_row_reg[6]/G is not reached by a timing clock
 Related violations: <none>

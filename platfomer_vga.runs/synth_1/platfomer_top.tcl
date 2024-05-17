@@ -36,8 +36,10 @@ set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
   C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/LFSR_9bit.v
   C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/apple_rom.v
+  C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/bin2bcd.v
   C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/button_sync.v
   C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/cherry_rom.v
+  C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/collision_detector.v
   C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/debouncer.v
   C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/fruit.v
   C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/fruits.v

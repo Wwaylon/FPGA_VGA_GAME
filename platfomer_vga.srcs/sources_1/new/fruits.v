@@ -2,7 +2,9 @@ module fruits(
     input clk, en, reset, 
     input [9:0] x, y,
     output wire [11:0] fruit_color,
-    output wire fruit_on
+    output wire fruit_on,
+    output wire [39:0] f_x,
+    output wire [39:0] f_y 
 );
 
     wire refresh_tick;
@@ -136,4 +138,7 @@ module fruits(
             apple_row <= y - f4_pos_y;
         end
     end
+    
+    assign f_x = {f1_pos_x, f2_pos_x, f3_pos_x, f4_pos_x};
+    assign f_y = {f1_pos_y, f2_pos_y, f3_pos_y, f4_pos_y};
 endmodule

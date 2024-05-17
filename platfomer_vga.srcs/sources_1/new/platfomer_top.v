@@ -15,7 +15,6 @@ module platfomer_top(
     wire [11:0] player_color_data;
     
     wire score_on;
-    reg [13:0] score;
     
     reg [11:0] background_color = 12'hABF;
     
@@ -29,6 +28,10 @@ module platfomer_top(
     wire game_reset;
     wire game_pause;
     reg fruit_enable;
+    
+    wire [13:0] score;
+    wire [39:0] f_x;
+    wire [39:0] f_y;
     
     //instantiate clks
     clk_wiz_0 clock_instance (
@@ -87,12 +90,24 @@ module platfomer_top(
     // Instantiate fruits module
     fruits fruits_unit(
         .clk(clk_100mhz),
-        .en(fruit_enable),  // Enable the fruits generation, can be modified as needed
+        .en(fruit_enable),  
         .reset(game_reset),
         .x(x),
         .y(y),
         .fruit_color(fruit_color),
-        .fruit_on(fruit_on)
+        .fruit_on(fruit_on),
+        .f_x(f_x),
+        .f_y(f_y)
+    );
+    
+    //instantiate collision_detector
+    collision_detector collision_detector(
+        .game_reset(game_reset),
+        .p_x(player_pos_x),
+        .p_y(player_pos_y),
+        .f_x(f_x),
+        .f_y(f_y),
+        .score(score)
     );
    
     

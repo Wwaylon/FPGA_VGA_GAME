@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1715926233">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1715933329">
   <File Type="PA-TCL" Name="platfomer_top.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="platfomer_top_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="platfomer_top_reports.tcl"/>
@@ -32,6 +32,13 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/bin2bcd.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/button_sync.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -40,6 +47,13 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/cherry_rom.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/collision_detector.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -139,14 +153,6 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/platfomer_top.v">
       <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/bin2bcd.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>

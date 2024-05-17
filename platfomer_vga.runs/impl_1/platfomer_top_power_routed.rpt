@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date             : Thu May 16 23:13:29 2024
+| Date             : Fri May 17 01:11:42 2024
 | Host             : DESKTOP-TJMPVE6 running 64-bit major release  (build 9200)
 | Command          : report_power -file platfomer_top_power_routed.rpt -pb platfomer_top_power_summary_routed.pb -rpx platfomer_top_power_routed.rpx
 | Design           : platfomer_top
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.195        |
+| Total On-Chip Power (W)  | 0.192        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.122        |
+| Dynamic (W)              | 0.120        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.0         |
@@ -53,17 +53,17 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.003 |       10 |       --- |             --- |
-| Slice Logic    |     0.002 |     1386 |       --- |             --- |
-|   LUT as Logic |     0.002 |      653 |     20800 |            3.14 |
-|   CARRY4       |    <0.001 |      114 |      8150 |            1.40 |
-|   Register     |    <0.001 |      344 |     41600 |            0.83 |
-|   Others       |     0.000 |       38 |       --- |             --- |
-| Signals        |     0.002 |      848 |       --- |             --- |
+| Slice Logic    |     0.003 |     1693 |       --- |             --- |
+|   LUT as Logic |     0.002 |      815 |     20800 |            3.92 |
+|   CARRY4       |    <0.001 |      157 |      8150 |            1.93 |
+|   Register     |    <0.001 |      354 |     41600 |            0.85 |
+|   Others       |     0.000 |       43 |       --- |             --- |
+| Signals        |     0.002 |      960 |       --- |             --- |
 | Block RAM      |     0.012 |      6.5 |        50 |           13.00 |
 | PLL            |     0.100 |        1 |         5 |           20.00 |
-| I/O            |     0.003 |       20 |       106 |           18.87 |
+| I/O            |    <0.001 |       20 |       106 |           18.87 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.195 |          |           |                 |
+| Total          |     0.192 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,9 +73,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.036 |       0.026 |      0.010 |
+| Vccint    |       1.000 |     0.037 |       0.027 |      0.010 |
 | Vccaux    |       1.800 |     0.064 |       0.051 |      0.013 |
-| Vcco33    |       3.300 |     0.002 |       0.001 |      0.001 |
+| Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -149,7 +149,7 @@ Table of Contents
 +------------------+-----------+
 | Name             | Power (W) |
 +------------------+-----------+
-| platfomer_top    |     0.122 |
+| platfomer_top    |     0.120 |
 |   clock_instance |     0.101 |
 |     inst         |     0.101 |
 |   fruits_unit    |     0.010 |
@@ -157,7 +157,8 @@ Table of Contents
 |     f2           |     0.001 |
 |     f3           |     0.001 |
 |     f4           |     0.001 |
-|   menu_unit      |     0.001 |
+|   menu_unit      |     0.005 |
+|   player_unit    |     0.002 |
 +------------------+-----------+
 
 

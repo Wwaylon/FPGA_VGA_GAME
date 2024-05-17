@@ -44,5 +44,3 @@ set_property src_info {type:XDC file:2 line:68 export:INPUT save:INPUT read:READ
 set_property PACKAGE_PIN U17 [get_ports down]
 set_property src_info {type:XDC file:2 line:70 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN T17 [get_ports right]
-set_property src_info {type:XDC file:2 line:73 export:INPUT save:INPUT read:READ} [current_design]
-set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets open_menu_IBUF]
