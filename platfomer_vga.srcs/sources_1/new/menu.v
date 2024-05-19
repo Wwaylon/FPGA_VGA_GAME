@@ -1,6 +1,6 @@
 
 module menu(
-    input clk, down, up, open_menu,
+    input clk, up, open_menu,
     input [9:0] x, y,
     output reg menu_on, menu_text_on,
     output reg game_reset, 
@@ -17,8 +17,8 @@ module menu(
     reg [7:0] resume_col;
     reg [6:0] resume_row;
     wire resume_color_data;
-    wire open_menu_w, up_w, down_w;
-    wire open_menu_btn, up_btn, down_btn;
+    wire open_menu_w, up_w;
+    wire open_menu_btn, up_btn;
     button_sync b1(
         .clk(clk),
         .in(open_menu),
@@ -28,11 +28,6 @@ module menu(
         .clk(clk),
         .in(up),
         .out(up_w)
-    );
-    button_sync b3(
-        .clk(clk),
-        .in(down),
-        .out(down_w)
     );
     debounce debounce_open_menu(
         .clk(clk),
@@ -44,12 +39,6 @@ module menu(
         .in(up_w),
         .rise(up_btn)
     );
-    debounce debounce_down(
-        .clk(clk),
-        .in(down_w),
-        .rise(down_btn)
-    );
-    
     restart_rom r1(
         .clk(clk),
         .row(restart_row),
@@ -83,7 +72,7 @@ module menu(
                 menu_selection_next <= 0;
             end
         end
-        else if((up_btn || down_btn) && paused)
+        else if(up_btn && paused)
             menu_selection_next <= ~menu_selection;
     end
     

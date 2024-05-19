@@ -21,7 +21,7 @@ module score(
     wire [15:0] bcd;
     
     bin2bcd bin2bcd_unit(
-        .bin(score),
+        .bin((score>>1)),
         .bcd(bcd)
     );  
     

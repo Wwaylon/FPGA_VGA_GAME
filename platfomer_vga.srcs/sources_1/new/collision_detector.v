@@ -1,9 +1,10 @@
 module collision_detector(
+    input clk,
     input game_reset,
     input [9:0] p_x, p_y,
     input [39:0] f_x,
     input [39:0] f_y,
-    output reg [13:0] score
+    output reg [3:0] collision
     );
     
     // Define the width and height of the player and objects
@@ -15,7 +16,7 @@ module collision_detector(
     integer i;
     
     initial begin
-        score = 0;
+        collision = 0;
     end
     
     function d_bit;
@@ -26,7 +27,7 @@ module collision_detector(
                 (x < f_x + F_WIDTH) && 
                 (x + P_WIDTH > f_x) && 
                 (y < f_y + F_HEIGHT) && 
-                (y + P_HEIGHT > f_y)
+                (y + P_HEIGHT-35 > f_y) //so that if fruit passes the basket, detection won't trigger when fruit touches player body
             );
         end
     endfunction
@@ -35,14 +36,27 @@ module collision_detector(
     begin
         if(game_reset)
         begin
-            score <= 0;
+            collision <= 0;
         end
         else begin
-            if(d_bit(p_x, p_y, f_x[9:0], f_y[9:0]) 
-            || d_bit(p_x, p_y, f_x[19:10], f_y[19:10])
-            || d_bit(p_x, p_y, f_x[29:20], f_y[29:20])
-            || d_bit(p_x, p_y, f_x[39:30], f_y[39:30]))
-                score<=(score+1)<=1000? score+1 : 0;
+            if(d_bit(p_x, p_y, f_x[9:0], f_y[9:0]))
+            begin
+                collision <= 4'b1000;
+            end
+            else if(d_bit(p_x, p_y, f_x[19:10], f_y[19:10]))
+            begin
+                collision <= 4'b0100;
+            end
+            else if(d_bit(p_x, p_y, f_x[29:20], f_y[29:20]))
+            begin
+                collision <= 4'b0010;
+            end
+            else if (d_bit(p_x, p_y, f_x[39:30], f_y[39:30]))
+            begin
+                collision <= 4'b0001;
+            end   
+            else 
+                collision <= 4'b0000;
         end
        
     end

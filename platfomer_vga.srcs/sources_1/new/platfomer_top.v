@@ -1,5 +1,5 @@
 module platfomer_top(
-    input wire clk_b, up, down, right, left, open_menu, 
+    input wire clk_b, up, speed_up, right, left, open_menu, 
     output wire hsync, vsync,
     output wire [11:0] rgb   
     );
@@ -32,7 +32,8 @@ module platfomer_top(
     wire [13:0] score;
     wire [39:0] f_x;
     wire [39:0] f_y;
-    
+
+    wire [3:0] collision;    
     //instantiate clks
     clk_wiz_0 clock_instance (
         .clk_25mhz(clk_25mhz),     // output clk_25mhz
@@ -51,7 +52,6 @@ module platfomer_top(
     );
     menu menu_unit(
         .clk(clk_100mhz),
-        .down(down),
         .up(up),
         .open_menu(open_menu),
         .x(x),
@@ -77,6 +77,7 @@ module platfomer_top(
         .reset(game_reset),
         .right(right),
         .left(left),
+        .speed_up(speed_up),
         .game_pause(game_pause),
         .x(x),
         .y(y),
@@ -97,17 +98,20 @@ module platfomer_top(
         .fruit_color(fruit_color),
         .fruit_on(fruit_on),
         .f_x(f_x),
-        .f_y(f_y)
+        .f_y(f_y),
+        .score(score),
+        .collision(collision)
     );
     
     //instantiate collision_detector
     collision_detector collision_detector(
+        .clk(clk_100mhz),
         .game_reset(game_reset),
         .p_x(player_pos_x),
         .p_y(player_pos_y),
         .f_x(f_x),
         .f_y(f_y),
-        .score(score)
+        .collision(collision)
     );
    
     

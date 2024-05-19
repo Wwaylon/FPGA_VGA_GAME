@@ -1,12 +1,12 @@
 module player(
-    input clk, reset, right, left, game_pause,
+    input clk, reset, right, left, game_pause, speed_up,
     input [9:0] x, y,
     input [11:0] background_color,
     output reg [9:0] player_pos_x, player_pos_y,
     output reg player_on,
     output wire [11:0] player_color_data
     );    
-    reg[2:0] speed = 1;
+    //reg[2:0] speed = 1;
     //wires and registers
     reg [5:0] player_row;
 	reg [5:0] player_col;
@@ -39,11 +39,11 @@ module player(
     //every frame refresh update player position
     always@(*)
     begin
-        if(right && refresh_tick && (player_pos_x +50 +1) != 640 && (~game_pause)) begin
-            player_pos_x_next <= player_pos_x +speed;
+        if(right && refresh_tick && (~game_pause)) begin
+            player_pos_x_next <= speed_up ? (player_pos_x+50+5>640 ? 590 : player_pos_x+5) : (player_pos_x+50+2>640 ? 590 : player_pos_x+2);
         end
-        else if (left && refresh_tick && (player_pos_x -1) != 0 && (~game_pause)) begin
-            player_pos_x_next <= player_pos_x -speed;
+        else if (left && refresh_tick && (~game_pause)) begin
+            player_pos_x_next <= speed_up ? ((player_pos_x-5 > 640) ? 0 : player_pos_x-5) : (player_pos_x-2 > 640 ? 0 : player_pos_x-2);
         end
         else begin
             player_pos_x_next <= player_pos_x;

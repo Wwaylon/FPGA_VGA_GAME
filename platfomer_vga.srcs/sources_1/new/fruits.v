@@ -1,19 +1,36 @@
 module fruits(
     input clk, en, reset, 
     input [9:0] x, y,
+    input [3:0] collision,
     output wire [11:0] fruit_color,
     output wire fruit_on,
     output wire [39:0] f_x,
-    output wire [39:0] f_y 
+    output wire [39:0] f_y,
+    output wire [13:0] score
 );
 
+    reg frame_toggle; 
+
+    always @(posedge clk or posedge reset) begin
+        if (reset)
+        begin
+            frame_toggle <= 0;
+        end
+        else if (y == 481 && x == 0)
+        begin
+            frame_toggle <= ~frame_toggle;
+        end
+    end
+
     wire refresh_tick;
-    assign refresh_tick = ((y == 481) && (x == 0)) ? 1 : 0; // start of vsync(vertical retrace)
+    assign refresh_tick = (y == 481 && x == 0 && frame_toggle == 1) ? 1 : 0; // 30hz
     
     wire [9:0] f1_pos_x, f1_pos_y; 
     wire [9:0] f2_pos_x, f2_pos_y;
     wire [9:0] f3_pos_x, f3_pos_y;
     wire [9:0] f4_pos_x, f4_pos_y;
+
+    wire [9:0] score1, score2, score3, score4;
     
     reg [5:0] grape_row;
     reg [5:0] grape_col;
@@ -65,53 +82,65 @@ module fruits(
                       : (x >= f3_pos_x && x < f3_pos_x + 50 && y >= f3_pos_y && y < f3_pos_y + 50) ? (cherry_color_data == 12'hfff ? 12'hABF : cherry_color_data )
                       : (x >= f4_pos_x && x < f4_pos_x + 50 && y >= f4_pos_y && y < f4_pos_y + 50) ? (apple_color_data == 12'hfff ? 12'hABF : apple_color_data )
                       : 12'h000;
-    
+    //grape
     fruit f1(
         .clk(clk),
         .en(en),
         .reset(reset),
         .refresh_tick(refresh_tick),
-        .order(3'b000),
-        .distance(0),
-        .prev_x(50),
+        .first_fruit(1),
+        .y_a(f4_pos_y),
+        .y_b(f2_pos_y),
+        .y_c(f3_pos_y),
+        .collision(collision[0]),
         .x(f1_pos_x),
-        .y(f1_pos_y)
+        .y(f1_pos_y),
+        .score(score1)
     );
-    
+    //strawberry
     fruit f2(
         .clk(clk),
         .en(en),
         .reset(reset),
         .refresh_tick(refresh_tick),
-        .order(3'b001),
-        .distance(f1_pos_y),
-        .prev_x(f1_pos_x),
+        .first_fruit(0),
+        .y_a(f1_pos_y),
+        .y_b(f3_pos_y),
+        .y_c(f4_pos_y),
+        .collision(collision[1]),
         .x(f2_pos_x),
-        .y(f2_pos_y)
+        .y(f2_pos_y),
+        .score(score2)
     );
-    
-    fruit f3(
+    //cherry
+    fruit f3(       
         .clk(clk),
         .en(en),
         .reset(reset),
         .refresh_tick(refresh_tick),
-        .order(3'b010),
-        .distance(f1_pos_y),
-        .prev_x(f2_pos_x),
+        .first_fruit(0),
+        .y_a(f2_pos_y),
+        .y_b(f1_pos_y),
+        .y_c(f4_pos_y),
+        .collision(collision[2]),
         .x(f3_pos_x),
-        .y(f3_pos_y)
+        .y(f3_pos_y),
+        .score(score3)
     );
-    
+    //apple
     fruit f4(
         .clk(clk),
         .en(en),
         .reset(reset),
         .refresh_tick(refresh_tick),
-        .order(3'b011),
-        .distance(f1_pos_y),
-        .prev_x(f3_pos_x),
+        .first_fruit(0),
+        .y_a(f3_pos_y),
+        .y_b(f2_pos_y),
+        .y_c(f1_pos_y),
+        .collision(collision[3]),
         .x(f4_pos_x),
-        .y(f4_pos_y)
+        .y(f4_pos_y),
+        .score(score4)
     );
     
     always @(*) begin
@@ -139,6 +168,7 @@ module fruits(
         end
     end
     
+    assign score = ((score1 + score2 + score3 + score4) > 1000) ? 0 : (score1 + score2 + score3 + score4) ;
     assign f_x = {f1_pos_x, f2_pos_x, f3_pos_x, f4_pos_x};
     assign f_y = {f1_pos_y, f2_pos_y, f3_pos_y, f4_pos_y};
 endmodule
