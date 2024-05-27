@@ -7,9 +7,9 @@ The player is scored on how many fruits they catch within 3 lives.
 
 ## Controls
 - Left button
-  -Moves player left(when not in menu)
-* Right button
-  * Moves player right(when not in menu)
+  - Moves player left(when not in menu)
+- Right button
+  - Moves player right(when not in menu)
 - Down button
   - Increases player speed by 2x when held down in conjunction with left or right button
 - Center button 
