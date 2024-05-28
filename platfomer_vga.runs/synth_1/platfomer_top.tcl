@@ -44,6 +44,8 @@ read_verilog -library xil_defaultlib {
   C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/fruit.v
   C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/fruits.v
   C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/grape_rom.v
+  C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/heart_rom.v
+  C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/life.v
   C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/menu.v
   C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/numbers_rom.v
   C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/player.v
@@ -51,6 +53,7 @@ read_verilog -library xil_defaultlib {
   C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/restart_text_rom.v
   C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/resume_text_rom.v
   C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/score.v
+  C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/score_rom.v
   C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/strawberry_rom.v
   C:/Users/Waylon/Desktop/Code/vga_platformer/VGA_Platformer.srcs/sources_1/new/vga_timing.v
   C:/Users/Waylon/Desktop/Code/platfomer_vga/platfomer_vga.srcs/sources_1/new/platfomer_top.v

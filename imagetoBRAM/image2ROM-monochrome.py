@@ -63,5 +63,5 @@ def generate(name):
     rom_mono(name, im)
 
 # Generate ROM from monochrome bitmap image
-generate("instructions.bmp")
+generate("heart.bmp")
 

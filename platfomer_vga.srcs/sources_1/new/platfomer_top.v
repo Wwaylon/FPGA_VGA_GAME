@@ -27,13 +27,19 @@ module platfomer_top(
     
     wire game_reset;
     wire game_pause;
+    wire game_over;  
+
     reg fruit_enable;
     
     wire [13:0] score;
     wire [39:0] f_x;
     wire [39:0] f_y;
 
-    wire [3:0] collision;    
+    wire [3:0] collision;  
+
+    wire [2:0] life_on;
+
+    wire damage;
     //instantiate clks
     clk_wiz_0 clock_instance (
         .clk_25mhz(clk_25mhz),     // output clk_25mhz
@@ -54,6 +60,7 @@ module platfomer_top(
         .clk(clk_100mhz),
         .up(up),
         .open_menu(open_menu),
+        .game_over(game_over),
         .x(x),
         .y(y),
         .menu_on(menu_on),
@@ -100,7 +107,8 @@ module platfomer_top(
         .f_x(f_x),
         .f_y(f_y),
         .score(score),
-        .collision(collision)
+        .collision(collision),
+        .damage(damage)
     );
     
     //instantiate collision_detector
@@ -112,6 +120,17 @@ module platfomer_top(
         .f_x(f_x),
         .f_y(f_y),
         .collision(collision)
+    );
+
+    //instantiate life_unit
+    life life_unit(
+        .clk(clk_100mhz),
+        .reset(game_reset),
+        .damage(damage),
+        .x(x),
+        .y(y),
+        .life_on(life_on),
+        .game_over(game_over)
     );
    
     
@@ -130,6 +149,7 @@ module platfomer_top(
         end
     end  
     
+    //set rgb color
     always @(*)
     begin
         if(player_on)
@@ -147,6 +167,18 @@ module platfomer_top(
         else if(menu_on)
         begin
             rgb_next <= menu_color;
+        end
+        else if(life_on[0])
+        begin
+            rgb_next <= 12'hF00;
+        end
+        else if(life_on[1])
+        begin
+            rgb_next <= 12'hF00;
+        end
+        else if(life_on[2])
+        begin
+            rgb_next <= 12'hF00;
         end
         else if(x >= 0 && x < 640 &&  y >= 0 && y <40)
         begin

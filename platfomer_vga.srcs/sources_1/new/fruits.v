@@ -6,7 +6,9 @@ module fruits(
     output wire fruit_on,
     output wire [39:0] f_x,
     output wire [39:0] f_y,
-    output wire [13:0] score
+    output wire [13:0] score,
+    output reg damage
+
 );
 
     reg frame_toggle; 
@@ -23,7 +25,7 @@ module fruits(
     end
 
     wire refresh_tick;
-    assign refresh_tick = (y == 481 && x == 0 && frame_toggle == 1) ? 1 : 0; // 30hz
+    assign refresh_tick = (y == 481 && x == 0 && (frame_toggle == 1 || (score>>1) >= 50)) ? 1 : 0; // 30hz
     
     wire [9:0] f1_pos_x, f1_pos_y; 
     wire [9:0] f2_pos_x, f2_pos_y;
@@ -166,9 +168,14 @@ module fruits(
             apple_col <= x - f4_pos_x;
             apple_row <= y - f4_pos_y;
         end
+        damage <=0;
+        if(f1_pos_y == 479 || f2_pos_y == 479 || f3_pos_y == 479 || f4_pos_y == 479)
+        begin
+            damage <= 1;
+        end
     end
     
-    assign score = ((score1 + score2 + score3 + score4) > 1000) ? 0 : (score1 + score2 + score3 + score4) ;
+    assign score = (score1 + score2 + score3 + score4) ;
     assign f_x = {f1_pos_x, f2_pos_x, f3_pos_x, f4_pos_x};
     assign f_y = {f1_pos_y, f2_pos_y, f3_pos_y, f4_pos_y};
 endmodule

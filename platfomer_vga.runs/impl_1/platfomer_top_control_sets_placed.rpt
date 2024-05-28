@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Sat May 18 21:14:36 2024
+| Date         : Sun May 19 15:55:28 2024
 | Host         : DESKTOP-TJMPVE6 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file platfomer_top_control_sets_placed.rpt
 | Design       : platfomer_top
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |    21 |
-|    Minimum number of control sets                        |    21 |
+| Total control sets                                       |    23 |
+|    Minimum number of control sets                        |    23 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |   113 |
+| Unused register locations in slices containing registers |   114 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,14 +39,14 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |    21 |
+| Total control sets |    23 |
 | >= 0 to < 4        |     0 |
 | >= 4 to < 6        |     0 |
 | >= 6 to < 8        |     0 |
-| >= 8 to < 10       |     4 |
-| >= 10 to < 12      |    11 |
-| >= 12 to < 14      |     1 |
-| >= 14 to < 16      |     2 |
+| >= 8 to < 10       |     5 |
+| >= 10 to < 12      |    12 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     3 |
 | >= 16              |     3 |
 +--------------------+-------+
 * Control sets can be remapped at either synth_design or opt_design
@@ -58,11 +58,11 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              43 |           14 |
-| No           | No                    | Yes                    |             103 |           48 |
-| No           | Yes                   | No                     |              37 |           13 |
+| No           | No                    | No                     |              55 |           21 |
+| No           | No                    | Yes                    |             107 |           49 |
+| No           | Yes                   | No                     |              44 |           15 |
 | Yes          | No                    | No                     |               0 |            0 |
-| Yes          | No                    | Yes                    |             136 |           62 |
+| Yes          | No                    | Yes                    |             136 |           57 |
 | Yes          | Yes                   | No                     |              40 |           10 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -70,30 +70,32 @@ Table of Contents
 4. Detailed Control Set Information
 -----------------------------------
 
-+------------------------------------+------------------------------------------+--------------------------------------------------+------------------+----------------+
-|            Clock Signal            |               Enable Signal              |                 Set/Reset Signal                 | Slice Load Count | Bel Load Count |
-+------------------------------------+------------------------------------------+--------------------------------------------------+------------------+----------------+
-|  clock_instance/inst/clk_100mhz    | fruits_unit/f4/x_pos                     | menu_unit/debounce_open_menu/AR[0]               |                4 |              9 |
-|  clock_instance/inst/clk_100mhz    | collision_detector/E[0]                  | menu_unit/debounce_open_menu/AR[0]               |                5 |              9 |
-|  clock_instance/inst/clk_100mhz    | collision_detector/fruit_enable_reg_0[0] | menu_unit/debounce_open_menu/AR[0]               |                5 |              9 |
-|  clock_instance/inst/clk_100mhz    | collision_detector/fruit_enable_reg[0]   | menu_unit/debounce_open_menu/AR[0]               |                2 |              9 |
-|  clock_instance/inst/clk_25mhz     |                                          | menu_unit/debounce_open_menu/AR[0]               |                5 |             10 |
-|  clock_instance/inst/clk_25mhz     | vga_timing_unit/v_pos                    | menu_unit/debounce_open_menu/AR[0]               |                5 |             10 |
-|  clock_instance/inst/clk_100mhz    | fruits_unit/f3/score[9]_i_1__1_n_0       | menu_unit/debounce_open_menu/AR[0]               |                5 |             10 |
-|  clock_instance/inst/clk_100mhz    | fruits_unit/f3/y_pos                     | menu_unit/debounce_open_menu/AR[0]               |                4 |             10 |
-|  clock_instance/inst/clk_100mhz    | fruits_unit/f4/score[9]_i_1__0_n_0       | menu_unit/debounce_open_menu/AR[0]               |                5 |             10 |
-|  clock_instance/inst/clk_100mhz    | fruits_unit/f4/y_pos                     | menu_unit/debounce_open_menu/AR[0]               |                4 |             10 |
-|  clock_instance/inst/clk_100mhz    | vga_timing_unit/paused_reg[0]            | menu_unit/debounce_open_menu/AR[0]               |                8 |             10 |
-|  clock_instance/inst/clk_100mhz    | fruits_unit/f1/y_pos_0                   | menu_unit/debounce_open_menu/AR[0]               |                3 |             10 |
-|  clock_instance/inst/clk_100mhz    | fruits_unit/f2/score[9]_i_1__2_n_0       | menu_unit/debounce_open_menu/AR[0]               |                5 |             10 |
-|  clock_instance/inst/clk_100mhz    | fruits_unit/f2/y_pos                     | menu_unit/debounce_open_menu/AR[0]               |                4 |             10 |
-|  clock_instance/inst/clk_100mhz    | fruits_unit/f1/score[9]_i_1_n_0          | menu_unit/debounce_open_menu/AR[0]               |                3 |             10 |
-|  clock_instance/inst/clk_100mhz    |                                          |                                                  |                5 |             13 |
-|  vga_timing_unit/E[0]              |                                          |                                                  |                4 |             15 |
-|  vga_timing_unit/v_pos_reg[9]_1[0] |                                          |                                                  |                5 |             15 |
-|  clock_instance/inst/clk_100mhz    | menu_unit/debounce_up/counter            | menu_unit/debounce_up/counter[20]_i_1__0_n_0     |                5 |             20 |
-|  clock_instance/inst/clk_100mhz    | menu_unit/debounce_open_menu/counter_0   | menu_unit/debounce_open_menu/counter[20]_i_1_n_0 |                5 |             20 |
-|  clock_instance/inst/clk_100mhz    |                                          | menu_unit/debounce_open_menu/AR[0]               |               56 |            130 |
-+------------------------------------+------------------------------------------+--------------------------------------------------+------------------+----------------+
++------------------------------------+----------------------------------------+--------------------------------------------------+------------------+----------------+
+|            Clock Signal            |              Enable Signal             |                 Set/Reset Signal                 | Slice Load Count | Bel Load Count |
++------------------------------------+----------------------------------------+--------------------------------------------------+------------------+----------------+
+|  clock_instance/inst/clk_100mhz    |                                        | vga_timing_unit/h_pos_reg[5]_2                   |                2 |              8 |
+|  clock_instance/inst/clk_100mhz    | collision_detector/E[0]                | life_unit/AR[0]                                  |                2 |              9 |
+|  clock_instance/inst/clk_100mhz    | fruits_unit/f1/x_pos_0                 | life_unit/AR[0]                                  |                4 |              9 |
+|  clock_instance/inst/clk_100mhz    | fruits_unit/f3/x_pos                   | life_unit/AR[0]                                  |                5 |              9 |
+|  clock_instance/inst/clk_100mhz    | fruits_unit/f4/x_pos                   | life_unit/AR[0]                                  |                2 |              9 |
+|  clock_instance/inst/clk_100mhz    | fruits_unit/f2/score[9]_i_1__0_n_0     | life_unit/AR[0]                                  |                5 |             10 |
+|  clock_instance/inst/clk_100mhz    | fruits_unit/f1/y_pos_1                 | life_unit/AR[0]                                  |                4 |             10 |
+|  clock_instance/inst/clk_100mhz    | fruits_unit/f1/score[9]_i_1__1_n_0     | life_unit/AR[0]                                  |                3 |             10 |
+|  clock_instance/inst/clk_100mhz    | vga_timing_unit/paused_reg[0]          | life_unit/AR[0]                                  |                8 |             10 |
+|  clock_instance/inst/clk_100mhz    | fruits_unit/f3/score[9]_i_1_n_0        | life_unit/AR[0]                                  |                5 |             10 |
+|  clock_instance/inst/clk_100mhz    | fruits_unit/f3/y_pos                   | life_unit/AR[0]                                  |                3 |             10 |
+|  clock_instance/inst/clk_100mhz    | fruits_unit/f3/fruit_enable_reg[0]     | life_unit/AR[0]                                  |                3 |             10 |
+|  clock_instance/inst/clk_100mhz    | fruits_unit/f4/score[9]_i_1__2_n_0     | life_unit/AR[0]                                  |                5 |             10 |
+|  clock_instance/inst/clk_100mhz    | fruits_unit/f4/y_pos                   | life_unit/AR[0]                                  |                3 |             10 |
+|  clock_instance/inst/clk_25mhz     |                                        | life_unit/AR[0]                                  |                8 |             10 |
+|  clock_instance/inst/clk_25mhz     | vga_timing_unit/v_pos                  | life_unit/AR[0]                                  |                5 |             10 |
+|  vga_timing_unit/h_pos_reg[6]_0[0] |                                        |                                                  |                7 |             11 |
+|  clock_instance/inst/clk_100mhz    |                                        |                                                  |                4 |             14 |
+|  vga_timing_unit/E[0]              |                                        |                                                  |                5 |             15 |
+|  vga_timing_unit/v_pos_reg[7]_0[0] |                                        |                                                  |                5 |             15 |
+|  clock_instance/inst/clk_100mhz    | menu_unit/debounce_open_menu/counter_0 | menu_unit/debounce_open_menu/counter[20]_i_1_n_0 |                5 |             20 |
+|  clock_instance/inst/clk_100mhz    | menu_unit/debounce_up/counter          | menu_unit/debounce_up/counter[20]_i_1__0_n_0     |                5 |             20 |
+|  clock_instance/inst/clk_100mhz    |                                        | life_unit/AR[0]                                  |               54 |            133 |
++------------------------------------+----------------------------------------+--------------------------------------------------+------------------+----------------+
 
 

@@ -9,6 +9,10 @@ module score(
 	reg [3:0] col;
     wire color_data;
     reg score_on;
+
+    reg [3:0] score_text_row;
+    reg [6:0] score_text_col;
+    wire score_text_color_data;
     
     //infer numbers ROM 
     numbers_rom numbers_rom_unit(
@@ -17,11 +21,20 @@ module score(
         .col(col),
         .color_data(color_data)
     );
+    //infer score rom
+    score_rom score_rom_unit(
+        .clk(clk),
+        .row(score_text_row),
+        .col(score_text_col),
+        .color_data(score_text_color_data)
+    );
+
     
     wire [15:0] bcd;
     
+    //instantiate bin2bcd unit
     bin2bcd bin2bcd_unit(
-        .bin((score>>1)),
+        .bin((score>>1)), 
         .bcd(bcd)
     );  
     
@@ -64,6 +77,15 @@ module score(
             if(color_data == 1'b0)
             begin
                 score_on <=1;
+            end
+        end
+        else if (x>= 491 && x<571 && y>=16 && y <32)
+        begin
+            score_text_col <= x-491;
+            score_text_row <= y-16;
+            if(score_text_color_data == 1'b0)
+            begin
+                score_on <= 1;
             end
         end
         

@@ -37,7 +37,7 @@ module fruit(
             else if(collision) begin
                 y_pos <= 480;
                 x_pos <= rng;
-                score <= (score +1 == 1024) ? 0 : score+1;
+                score <= score+1;
             end 
             else if (refresh_tick && y_pos < 480) begin
                 y_pos <= y_pos + 1; // Increment position based on speed

@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Sat May 18 21:14:18 2024
+| Date         : Sun May 19 15:55:06 2024
 | Host         : DESKTOP-TJMPVE6 running 64-bit major release  (build 9200)
 | Command      : report_drc -file platfomer_top_drc_opted.rpt -pb platfomer_top_drc_opted.pb -rpx platfomer_top_drc_opted.rpx
 | Design       : platfomer_top
@@ -61,202 +61,202 @@ Related violations: <none>
 
 REQP-1839#1 Warning
 RAMB36 async control check  
-The RAMB36E1 fruits_unit/sel has an input control pin fruits_unit/sel/ADDRARDADDR[14] (net: fruits_unit/apple_row[5]) which is driven by a register (vga_timing_unit/h_pos_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB36E1 fruits_unit/sel has an input control pin fruits_unit/sel/ADDRARDADDR[14] (net: fruits_unit/apple_row[5]) which is driven by a register (fruits_unit/f2/x_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1839#2 Warning
 RAMB36 async control check  
-The RAMB36E1 fruits_unit/sel has an input control pin fruits_unit/sel/ADDRARDADDR[14] (net: fruits_unit/apple_row[5]) which is driven by a register (vga_timing_unit/h_pos_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB36E1 fruits_unit/sel has an input control pin fruits_unit/sel/ADDRARDADDR[14] (net: fruits_unit/apple_row[5]) which is driven by a register (fruits_unit/f2/x_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1839#3 Warning
 RAMB36 async control check  
-The RAMB36E1 fruits_unit/sel has an input control pin fruits_unit/sel/ADDRARDADDR[14] (net: fruits_unit/apple_row[5]) which is driven by a register (vga_timing_unit/h_pos_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB36E1 fruits_unit/sel has an input control pin fruits_unit/sel/ADDRARDADDR[14] (net: fruits_unit/apple_row[5]) which is driven by a register (fruits_unit/f2/x_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1839#4 Warning
 RAMB36 async control check  
-The RAMB36E1 fruits_unit/sel has an input control pin fruits_unit/sel/ADDRARDADDR[14] (net: fruits_unit/apple_row[5]) which is driven by a register (vga_timing_unit/h_pos_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB36E1 fruits_unit/sel has an input control pin fruits_unit/sel/ADDRARDADDR[14] (net: fruits_unit/apple_row[5]) which is driven by a register (fruits_unit/f2/x_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1839#5 Warning
 RAMB36 async control check  
-The RAMB36E1 fruits_unit/sel has an input control pin fruits_unit/sel/ADDRARDADDR[14] (net: fruits_unit/apple_row[5]) which is driven by a register (vga_timing_unit/h_pos_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB36E1 fruits_unit/sel has an input control pin fruits_unit/sel/ADDRARDADDR[14] (net: fruits_unit/apple_row[5]) which is driven by a register (fruits_unit/f2/x_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1839#6 Warning
 RAMB36 async control check  
-The RAMB36E1 fruits_unit/sel has an input control pin fruits_unit/sel/ADDRARDADDR[14] (net: fruits_unit/apple_row[5]) which is driven by a register (vga_timing_unit/h_pos_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB36E1 fruits_unit/sel has an input control pin fruits_unit/sel/ADDRARDADDR[14] (net: fruits_unit/apple_row[5]) which is driven by a register (fruits_unit/f2/y_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1839#7 Warning
 RAMB36 async control check  
-The RAMB36E1 fruits_unit/sel has an input control pin fruits_unit/sel/ADDRARDADDR[14] (net: fruits_unit/apple_row[5]) which is driven by a register (vga_timing_unit/h_pos_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB36E1 fruits_unit/sel has an input control pin fruits_unit/sel/ADDRARDADDR[14] (net: fruits_unit/apple_row[5]) which is driven by a register (fruits_unit/f2/y_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1839#8 Warning
 RAMB36 async control check  
-The RAMB36E1 fruits_unit/sel has an input control pin fruits_unit/sel/ADDRARDADDR[14] (net: fruits_unit/apple_row[5]) which is driven by a register (vga_timing_unit/h_pos_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB36E1 fruits_unit/sel has an input control pin fruits_unit/sel/ADDRARDADDR[14] (net: fruits_unit/apple_row[5]) which is driven by a register (fruits_unit/f2/y_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1839#9 Warning
 RAMB36 async control check  
-The RAMB36E1 fruits_unit/sel has an input control pin fruits_unit/sel/ADDRARDADDR[14] (net: fruits_unit/apple_row[5]) which is driven by a register (vga_timing_unit/h_pos_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB36E1 fruits_unit/sel has an input control pin fruits_unit/sel/ADDRARDADDR[14] (net: fruits_unit/apple_row[5]) which is driven by a register (fruits_unit/f2/y_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1839#10 Warning
 RAMB36 async control check  
-The RAMB36E1 fruits_unit/sel has an input control pin fruits_unit/sel/ADDRARDADDR[14] (net: fruits_unit/apple_row[5]) which is driven by a register (vga_timing_unit/h_pos_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB36E1 fruits_unit/sel has an input control pin fruits_unit/sel/ADDRARDADDR[14] (net: fruits_unit/apple_row[5]) which is driven by a register (fruits_unit/f2/y_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1839#11 Warning
 RAMB36 async control check  
-The RAMB36E1 fruits_unit/sel has an input control pin fruits_unit/sel/ADDRARDADDR[14] (net: fruits_unit/apple_row[5]) which is driven by a register (vga_timing_unit/v_pos_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB36E1 fruits_unit/sel has an input control pin fruits_unit/sel/ADDRARDADDR[14] (net: fruits_unit/apple_row[5]) which is driven by a register (vga_timing_unit/h_pos_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1839#12 Warning
 RAMB36 async control check  
-The RAMB36E1 fruits_unit/sel has an input control pin fruits_unit/sel/ADDRARDADDR[14] (net: fruits_unit/apple_row[5]) which is driven by a register (vga_timing_unit/v_pos_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB36E1 fruits_unit/sel has an input control pin fruits_unit/sel/ADDRARDADDR[14] (net: fruits_unit/apple_row[5]) which is driven by a register (vga_timing_unit/h_pos_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1839#13 Warning
 RAMB36 async control check  
-The RAMB36E1 fruits_unit/sel has an input control pin fruits_unit/sel/ADDRARDADDR[14] (net: fruits_unit/apple_row[5]) which is driven by a register (vga_timing_unit/v_pos_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB36E1 fruits_unit/sel has an input control pin fruits_unit/sel/ADDRARDADDR[14] (net: fruits_unit/apple_row[5]) which is driven by a register (vga_timing_unit/h_pos_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1839#14 Warning
 RAMB36 async control check  
-The RAMB36E1 fruits_unit/sel has an input control pin fruits_unit/sel/ADDRARDADDR[14] (net: fruits_unit/apple_row[5]) which is driven by a register (vga_timing_unit/v_pos_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB36E1 fruits_unit/sel has an input control pin fruits_unit/sel/ADDRARDADDR[14] (net: fruits_unit/apple_row[5]) which is driven by a register (vga_timing_unit/h_pos_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1839#15 Warning
 RAMB36 async control check  
-The RAMB36E1 fruits_unit/sel has an input control pin fruits_unit/sel/ADDRARDADDR[14] (net: fruits_unit/apple_row[5]) which is driven by a register (vga_timing_unit/v_pos_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB36E1 fruits_unit/sel has an input control pin fruits_unit/sel/ADDRARDADDR[14] (net: fruits_unit/apple_row[5]) which is driven by a register (vga_timing_unit/h_pos_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1839#16 Warning
 RAMB36 async control check  
-The RAMB36E1 fruits_unit/sel has an input control pin fruits_unit/sel/ADDRARDADDR[14] (net: fruits_unit/apple_row[5]) which is driven by a register (vga_timing_unit/v_pos_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB36E1 fruits_unit/sel has an input control pin fruits_unit/sel/ADDRARDADDR[14] (net: fruits_unit/apple_row[5]) which is driven by a register (vga_timing_unit/h_pos_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1839#17 Warning
 RAMB36 async control check  
-The RAMB36E1 fruits_unit/sel has an input control pin fruits_unit/sel/ADDRARDADDR[14] (net: fruits_unit/apple_row[5]) which is driven by a register (vga_timing_unit/v_pos_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB36E1 fruits_unit/sel has an input control pin fruits_unit/sel/ADDRARDADDR[14] (net: fruits_unit/apple_row[5]) which is driven by a register (vga_timing_unit/h_pos_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1839#18 Warning
 RAMB36 async control check  
-The RAMB36E1 fruits_unit/sel has an input control pin fruits_unit/sel/ADDRARDADDR[14] (net: fruits_unit/apple_row[5]) which is driven by a register (vga_timing_unit/v_pos_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB36E1 fruits_unit/sel has an input control pin fruits_unit/sel/ADDRARDADDR[14] (net: fruits_unit/apple_row[5]) which is driven by a register (vga_timing_unit/h_pos_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1839#19 Warning
 RAMB36 async control check  
-The RAMB36E1 fruits_unit/sel has an input control pin fruits_unit/sel/ADDRARDADDR[14] (net: fruits_unit/apple_row[5]) which is driven by a register (vga_timing_unit/v_pos_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB36E1 fruits_unit/sel has an input control pin fruits_unit/sel/ADDRARDADDR[14] (net: fruits_unit/apple_row[5]) which is driven by a register (vga_timing_unit/h_pos_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1839#20 Warning
 RAMB36 async control check  
-The RAMB36E1 fruits_unit/sel has an input control pin fruits_unit/sel/ADDRARDADDR[14] (net: fruits_unit/apple_row[5]) which is driven by a register (vga_timing_unit/v_pos_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB36E1 fruits_unit/sel has an input control pin fruits_unit/sel/ADDRARDADDR[14] (net: fruits_unit/apple_row[5]) which is driven by a register (vga_timing_unit/h_pos_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1840#1 Warning
 RAMB18 async control check  
-The RAMB18E1 fruits_unit/sel__0 has an input control pin fruits_unit/sel__0/ADDRARDADDR[13] (net: fruits_unit/cherry_row[5]) which is driven by a register (vga_timing_unit/h_pos_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB18E1 fruits_unit/sel__0 has an input control pin fruits_unit/sel__0/ADDRARDADDR[13] (net: fruits_unit/cherry_row[5]) which is driven by a register (fruits_unit/f2/x_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1840#2 Warning
 RAMB18 async control check  
-The RAMB18E1 fruits_unit/sel__0 has an input control pin fruits_unit/sel__0/ADDRARDADDR[13] (net: fruits_unit/cherry_row[5]) which is driven by a register (vga_timing_unit/h_pos_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB18E1 fruits_unit/sel__0 has an input control pin fruits_unit/sel__0/ADDRARDADDR[13] (net: fruits_unit/cherry_row[5]) which is driven by a register (fruits_unit/f2/x_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1840#3 Warning
 RAMB18 async control check  
-The RAMB18E1 fruits_unit/sel__0 has an input control pin fruits_unit/sel__0/ADDRARDADDR[13] (net: fruits_unit/cherry_row[5]) which is driven by a register (vga_timing_unit/h_pos_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB18E1 fruits_unit/sel__0 has an input control pin fruits_unit/sel__0/ADDRARDADDR[13] (net: fruits_unit/cherry_row[5]) which is driven by a register (fruits_unit/f2/x_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1840#4 Warning
 RAMB18 async control check  
-The RAMB18E1 fruits_unit/sel__0 has an input control pin fruits_unit/sel__0/ADDRARDADDR[13] (net: fruits_unit/cherry_row[5]) which is driven by a register (vga_timing_unit/h_pos_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB18E1 fruits_unit/sel__0 has an input control pin fruits_unit/sel__0/ADDRARDADDR[13] (net: fruits_unit/cherry_row[5]) which is driven by a register (fruits_unit/f2/x_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1840#5 Warning
 RAMB18 async control check  
-The RAMB18E1 fruits_unit/sel__0 has an input control pin fruits_unit/sel__0/ADDRARDADDR[13] (net: fruits_unit/cherry_row[5]) which is driven by a register (vga_timing_unit/h_pos_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB18E1 fruits_unit/sel__0 has an input control pin fruits_unit/sel__0/ADDRARDADDR[13] (net: fruits_unit/cherry_row[5]) which is driven by a register (fruits_unit/f2/x_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1840#6 Warning
 RAMB18 async control check  
-The RAMB18E1 fruits_unit/sel__0 has an input control pin fruits_unit/sel__0/ADDRARDADDR[13] (net: fruits_unit/cherry_row[5]) which is driven by a register (vga_timing_unit/h_pos_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB18E1 fruits_unit/sel__0 has an input control pin fruits_unit/sel__0/ADDRARDADDR[13] (net: fruits_unit/cherry_row[5]) which is driven by a register (fruits_unit/f2/y_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1840#7 Warning
 RAMB18 async control check  
-The RAMB18E1 fruits_unit/sel__0 has an input control pin fruits_unit/sel__0/ADDRARDADDR[13] (net: fruits_unit/cherry_row[5]) which is driven by a register (vga_timing_unit/h_pos_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB18E1 fruits_unit/sel__0 has an input control pin fruits_unit/sel__0/ADDRARDADDR[13] (net: fruits_unit/cherry_row[5]) which is driven by a register (fruits_unit/f2/y_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1840#8 Warning
 RAMB18 async control check  
-The RAMB18E1 fruits_unit/sel__0 has an input control pin fruits_unit/sel__0/ADDRARDADDR[13] (net: fruits_unit/cherry_row[5]) which is driven by a register (vga_timing_unit/h_pos_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB18E1 fruits_unit/sel__0 has an input control pin fruits_unit/sel__0/ADDRARDADDR[13] (net: fruits_unit/cherry_row[5]) which is driven by a register (fruits_unit/f2/y_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1840#9 Warning
 RAMB18 async control check  
-The RAMB18E1 fruits_unit/sel__0 has an input control pin fruits_unit/sel__0/ADDRARDADDR[13] (net: fruits_unit/cherry_row[5]) which is driven by a register (vga_timing_unit/h_pos_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB18E1 fruits_unit/sel__0 has an input control pin fruits_unit/sel__0/ADDRARDADDR[13] (net: fruits_unit/cherry_row[5]) which is driven by a register (fruits_unit/f2/y_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1840#10 Warning
 RAMB18 async control check  
-The RAMB18E1 fruits_unit/sel__0 has an input control pin fruits_unit/sel__0/ADDRARDADDR[13] (net: fruits_unit/cherry_row[5]) which is driven by a register (vga_timing_unit/h_pos_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB18E1 fruits_unit/sel__0 has an input control pin fruits_unit/sel__0/ADDRARDADDR[13] (net: fruits_unit/cherry_row[5]) which is driven by a register (fruits_unit/f2/y_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1840#11 Warning
 RAMB18 async control check  
-The RAMB18E1 fruits_unit/sel__0 has an input control pin fruits_unit/sel__0/ADDRARDADDR[13] (net: fruits_unit/cherry_row[5]) which is driven by a register (vga_timing_unit/v_pos_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB18E1 fruits_unit/sel__0 has an input control pin fruits_unit/sel__0/ADDRARDADDR[13] (net: fruits_unit/cherry_row[5]) which is driven by a register (vga_timing_unit/h_pos_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1840#12 Warning
 RAMB18 async control check  
-The RAMB18E1 fruits_unit/sel__0 has an input control pin fruits_unit/sel__0/ADDRARDADDR[13] (net: fruits_unit/cherry_row[5]) which is driven by a register (vga_timing_unit/v_pos_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB18E1 fruits_unit/sel__0 has an input control pin fruits_unit/sel__0/ADDRARDADDR[13] (net: fruits_unit/cherry_row[5]) which is driven by a register (vga_timing_unit/h_pos_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1840#13 Warning
 RAMB18 async control check  
-The RAMB18E1 fruits_unit/sel__0 has an input control pin fruits_unit/sel__0/ADDRARDADDR[13] (net: fruits_unit/cherry_row[5]) which is driven by a register (vga_timing_unit/v_pos_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB18E1 fruits_unit/sel__0 has an input control pin fruits_unit/sel__0/ADDRARDADDR[13] (net: fruits_unit/cherry_row[5]) which is driven by a register (vga_timing_unit/h_pos_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1840#14 Warning
 RAMB18 async control check  
-The RAMB18E1 fruits_unit/sel__0 has an input control pin fruits_unit/sel__0/ADDRARDADDR[13] (net: fruits_unit/cherry_row[5]) which is driven by a register (vga_timing_unit/v_pos_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB18E1 fruits_unit/sel__0 has an input control pin fruits_unit/sel__0/ADDRARDADDR[13] (net: fruits_unit/cherry_row[5]) which is driven by a register (vga_timing_unit/h_pos_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1840#15 Warning
 RAMB18 async control check  
-The RAMB18E1 fruits_unit/sel__0 has an input control pin fruits_unit/sel__0/ADDRARDADDR[13] (net: fruits_unit/cherry_row[5]) which is driven by a register (vga_timing_unit/v_pos_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB18E1 fruits_unit/sel__0 has an input control pin fruits_unit/sel__0/ADDRARDADDR[13] (net: fruits_unit/cherry_row[5]) which is driven by a register (vga_timing_unit/h_pos_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1840#16 Warning
 RAMB18 async control check  
-The RAMB18E1 fruits_unit/sel__0 has an input control pin fruits_unit/sel__0/ADDRARDADDR[13] (net: fruits_unit/cherry_row[5]) which is driven by a register (vga_timing_unit/v_pos_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB18E1 fruits_unit/sel__0 has an input control pin fruits_unit/sel__0/ADDRARDADDR[13] (net: fruits_unit/cherry_row[5]) which is driven by a register (vga_timing_unit/h_pos_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1840#17 Warning
 RAMB18 async control check  
-The RAMB18E1 fruits_unit/sel__0 has an input control pin fruits_unit/sel__0/ADDRARDADDR[13] (net: fruits_unit/cherry_row[5]) which is driven by a register (vga_timing_unit/v_pos_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB18E1 fruits_unit/sel__0 has an input control pin fruits_unit/sel__0/ADDRARDADDR[13] (net: fruits_unit/cherry_row[5]) which is driven by a register (vga_timing_unit/h_pos_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1840#18 Warning
 RAMB18 async control check  
-The RAMB18E1 fruits_unit/sel__0 has an input control pin fruits_unit/sel__0/ADDRARDADDR[13] (net: fruits_unit/cherry_row[5]) which is driven by a register (vga_timing_unit/v_pos_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB18E1 fruits_unit/sel__0 has an input control pin fruits_unit/sel__0/ADDRARDADDR[13] (net: fruits_unit/cherry_row[5]) which is driven by a register (vga_timing_unit/h_pos_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1840#19 Warning
 RAMB18 async control check  
-The RAMB18E1 fruits_unit/sel__0 has an input control pin fruits_unit/sel__0/ADDRARDADDR[13] (net: fruits_unit/cherry_row[5]) which is driven by a register (vga_timing_unit/v_pos_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB18E1 fruits_unit/sel__0 has an input control pin fruits_unit/sel__0/ADDRARDADDR[13] (net: fruits_unit/cherry_row[5]) which is driven by a register (vga_timing_unit/h_pos_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1840#20 Warning
 RAMB18 async control check  
-The RAMB18E1 fruits_unit/sel__0 has an input control pin fruits_unit/sel__0/ADDRARDADDR[13] (net: fruits_unit/cherry_row[5]) which is driven by a register (vga_timing_unit/v_pos_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB18E1 fruits_unit/sel__0 has an input control pin fruits_unit/sel__0/ADDRARDADDR[13] (net: fruits_unit/cherry_row[5]) which is driven by a register (vga_timing_unit/h_pos_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 

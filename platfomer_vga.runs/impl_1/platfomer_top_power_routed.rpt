@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date             : Sat May 18 21:15:18 2024
+| Date             : Sun May 19 15:56:34 2024
 | Host             : DESKTOP-TJMPVE6 running 64-bit major release  (build 9200)
 | Command          : report_power -file platfomer_top_power_routed.rpt -pb platfomer_top_power_summary_routed.pb -rpx platfomer_top_power_routed.rpx
 | Design           : platfomer_top
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.191        |
+| Total On-Chip Power (W)  | 0.201        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.119        |
+| Dynamic (W)              | 0.129        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.0         |
@@ -53,18 +53,18 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.003 |       10 |       --- |             --- |
-| Slice Logic    |    <0.001 |     1557 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      748 |     20800 |            3.60 |
+| Slice Logic    |     0.004 |     1636 |       --- |             --- |
+|   LUT as Logic |     0.004 |      783 |     20800 |            3.76 |
 |   CARRY4       |    <0.001 |      118 |      8150 |            1.45 |
-|   Register     |    <0.001 |      359 |     41600 |            0.86 |
-|   F7/F8 Muxes  |    <0.001 |        7 |     32600 |            0.02 |
-|   Others       |     0.000 |       34 |       --- |             --- |
-| Signals        |     0.001 |      946 |       --- |             --- |
-| Block RAM      |     0.012 |      6.5 |        50 |           13.00 |
+|   Register     |    <0.001 |      382 |     41600 |            0.92 |
+|   F7/F8 Muxes  |    <0.001 |       10 |     32600 |            0.03 |
+|   Others       |     0.000 |       38 |       --- |             --- |
+| Signals        |     0.004 |     1009 |       --- |             --- |
+| Block RAM      |     0.013 |        7 |        50 |           14.00 |
 | PLL            |     0.100 |        1 |         5 |           20.00 |
-| I/O            |     0.002 |       20 |       106 |           18.87 |
+| I/O            |     0.005 |       20 |       106 |           18.87 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.191 |          |           |                 |
+| Total          |     0.201 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,7 +74,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.034 |       0.024 |      0.010 |
+| Vccint    |       1.000 |     0.040 |       0.030 |      0.010 |
 | Vccaux    |       1.800 |     0.064 |       0.051 |      0.013 |
 | Vcco33    |       3.300 |     0.002 |       0.001 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -147,15 +147,21 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+------------------+-----------+
-| Name             | Power (W) |
-+------------------+-----------+
-| platfomer_top    |     0.119 |
-|   clock_instance |     0.101 |
-|     inst         |     0.101 |
-|   fruits_unit    |     0.008 |
-|   menu_unit      |     0.004 |
-|   player_unit    |     0.002 |
-+------------------+-----------+
++-------------------+-----------+
+| Name              | Power (W) |
++-------------------+-----------+
+| platfomer_top     |     0.129 |
+|   clock_instance  |     0.101 |
+|     inst          |     0.101 |
+|   fruits_unit     |     0.012 |
+|     f1            |     0.001 |
+|     f2            |     0.001 |
+|     f3            |     0.002 |
+|     f4            |     0.001 |
+|   menu_unit       |     0.004 |
+|   player_unit     |     0.002 |
+|   score_unit      |     0.002 |
+|   vga_timing_unit |     0.002 |
++-------------------+-----------+
 
 

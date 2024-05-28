@@ -1,12 +1,12 @@
 
 module menu(
-    input clk, up, open_menu,
+    input clk, up, open_menu, game_over,
     input [9:0] x, y,
     output reg menu_on, menu_text_on,
     output reg game_reset, 
     output wire game_pause
     );
-    
+    //wires and registers
     reg menu_selection =0;
     reg menu_selection_next =0;
     reg paused =0;
@@ -19,6 +19,8 @@ module menu(
     wire resume_color_data;
     wire open_menu_w, up_w;
     wire open_menu_btn, up_btn;
+
+    //instantiate modules for debouncing buttons
     button_sync b1(
         .clk(clk),
         .in(open_menu),
@@ -74,11 +76,14 @@ module menu(
         end
         else if(up_btn && paused)
             menu_selection_next <= ~menu_selection;
+        if(game_over)
+        begin
+            game_reset <=1;
+        end    
     end
     
     always@(*)
     begin
-        
         menu_on <= 0;
         menu_text_on <= 0;
         if(paused && x>=245 && x< 395 && y>= 190 && y<290)
