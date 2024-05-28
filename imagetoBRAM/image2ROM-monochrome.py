@@ -1,3 +1,6 @@
+#credit to Joey at https://embeddedthoughts.com/2016/07/30/storing-image-data-in-block-ram-on-a-xilinx-fpga/ for the image to bram script.
+#edited by Waylon to get it working with newer versions of python and making a monochrome version of the script.
+
 #from scipy import misc
 import imageio.v2 as imageio
 import math
