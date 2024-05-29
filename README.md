@@ -5,11 +5,11 @@ The player is scored on how many fruits they catch within 3 lives.
 
 <p align="center">
   <img src="https://github.com/Wwaylon/FPGA_VGA_GAME/blob/main/images/catchthefruit1.jpg?raw=true" width="800" title="Catch The Fruit Image">
-  <figcaption align="center">Photo of the game</figcaption>
+  <br><em>Photo of the game</em>
 </p>
 <p align="center">
   <img src="https://github.com/Wwaylon/FPGA_VGA_GAME/blob/main/images/basys3.jpg?raw=true" width="550" title="basys3">
-  <figcaption align="center">Basys3 FPGA board</figcaption>
+  <br><em>Basys3 FPGA board</em>
 </p>
 
 ## Controls
