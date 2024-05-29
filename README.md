@@ -3,7 +3,7 @@ This is a game is intended to be played on a vga monitor using the buttons on th
 If a fruit reaches the floor, the player loses a life point. At zero life points the game ends and restarts. 
 The player is scored on how many fruits they catch within 3 lives.
 
-[image of game]
+![alt text](https://github.com/[wwaylon]/[FPGA_VGA_GAME]/blob/[branch]/image.jpg?raw=true)
 
 ## Controls
 - Left button
