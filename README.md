@@ -2,12 +2,10 @@
 This is a game is intended to be played on a vga monitor using the buttons on the basys3 board. The game is a "Catch the Fruit", where the aim is to catch as many falling fruits as possible. 
 If a fruit reaches the floor, the player loses a life point. At zero life points the game ends and restarts. 
 The player is scored on how many fruits they catch within 3 lives.
-![alt text](https://github.com/Wwaylon/FPGA_VGA_GAME/blob/main/images/catchthefruit.jpg?raw=true)
-![basys3](https://github.com/Wwaylon/FPGA_VGA_GAME/blob/main/images/basys3.jpg?raw=true)
 
 <p align="center">
-  <img src="https://github.com/Wwaylon/FPGA_VGA_GAME/blob/main/images/catchthefruit.jpg?raw=true" width="350" title="basys3">
-  <img src="https://github.com/Wwaylon/FPGA_VGA_GAME/blob/main/images/basys3.jpg?raw=true" width="350" title="basys3">
+  <img src="https://github.com/Wwaylon/FPGA_VGA_GAME/blob/main/images/catchthefruit1.jpg?raw=true" width="450" title="basys3">
+  <img src="https://github.com/Wwaylon/FPGA_VGA_GAME/blob/main/images/basys3.jpg?raw=true" width="450" title="basys3">
 </p>
 
 ## Controls
