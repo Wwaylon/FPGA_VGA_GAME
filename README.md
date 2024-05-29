@@ -5,6 +5,11 @@ The player is scored on how many fruits they catch within 3 lives.
 ![alt text](https://github.com/Wwaylon/FPGA_VGA_GAME/blob/main/images/catchthefruit.jpg?raw=true)
 ![basys3](https://github.com/Wwaylon/FPGA_VGA_GAME/blob/main/images/basys3.jpg?raw=true)
 
+<p align="center">
+  <img src="https://github.com/Wwaylon/FPGA_VGA_GAME/blob/main/images/catchthefruit.jpg?raw=true" width="350" title="basys3">
+  <img src="https://github.com/Wwaylon/FPGA_VGA_GAME/blob/main/images/basys3.jpg?raw=true" width="350" title="basys3">
+</p>
+
 ## Controls
 - Left button
   - Moves player left(when not in menu)
