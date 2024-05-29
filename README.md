@@ -4,11 +4,14 @@ If a fruit reaches the floor, the player loses a life point. At zero life points
 The player is scored on how many fruits they catch within 3 lives.
 
 <p align="center">
-  <img src="https://github.com/Wwaylon/FPGA_VGA_GAME/blob/main/images/catchthefruit1.jpg?raw=true" width="800" title="basys3">
+  <img src="https://github.com/Wwaylon/FPGA_VGA_GAME/blob/main/images/catchthefruit1.jpg?raw=true" width="800" title="Catch The Fruit Image">
+  <figcaption>Photo of the game</figcaption>
 </p>
 <p align="center">
   <img src="https://github.com/Wwaylon/FPGA_VGA_GAME/blob/main/images/basys3.jpg?raw=true" width="550" title="basys3">
+  <figcaption>Basys3 FPGA board</figcaption>
 </p>
+
 ## Controls
 - Left button
   - Moves player left(when not in menu)
