@@ -7,7 +7,9 @@ The player is scored on how many fruits they catch within 3 lives.
   <img src="https://github.com/Wwaylon/FPGA_VGA_GAME/blob/main/images/catchthefruit1.jpg?raw=true" width="800" title="Catch The Fruit Image">
   <br><em>Photo of the game</em>
 </p>
-<iframe src="https://drive.google.com/file/d/1dU0x5I3jarGUIz8Yi9yZep13Qqnc5u1P/preview" width="640" height="480" allow="autoplay"></iframe>
+<div style="text-align: center;">
+  <iframe src="https://drive.google.com/file/d/1dU0x5I3jarGUIz8Yi9yZep13Qqnc5u1P/preview" width="640" height="480" allow="autoplay"></iframe>
+</div>
 
 ## Controls
 - Left button
