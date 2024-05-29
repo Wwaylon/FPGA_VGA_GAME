@@ -11,11 +11,7 @@ The player is scored on how many fruits they catch within 3 lives.
 <html>
 <body>
   
-  <iframe src="url video in google drive/preview" ></iframe>
-  
-  <!--aloow full screen add tag -->
-  
-<iframe allowfullscreen="allowfullscreen" src="your_page_url/preview" ></iframe>
+  <iframe src="https://drive.google.com/file/d/1dU0x5I3jarGUIz8Yi9yZep13Qqnc5u1P/preview" width="640" height="480" allow="autoplay"></iframe>
 
 </body>
 </html>
