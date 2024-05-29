@@ -7,10 +7,6 @@ The player is scored on how many fruits they catch within 3 lives.
   <img src="https://github.com/Wwaylon/FPGA_VGA_GAME/blob/main/images/catchthefruit1.jpg?raw=true" width="800" title="Catch The Fruit Image">
   <br><em>Photo of the game</em>
 </p>
-<p align="center">
-  <img src="https://github.com/Wwaylon/FPGA_VGA_GAME/blob/main/images/basys3.jpg?raw=true" width="550" title="basys3">
-  <br><em>Basys3 FPGA board</em>
-</p>
 
 ## Controls
 - Left button
@@ -23,6 +19,11 @@ The player is scored on how many fruits they catch within 3 lives.
   - Opens menu / Select menu option
 - Up button
   - Moves menu selection cursor(when in menu)
+
+<p align="center">
+  <img src="https://github.com/Wwaylon/FPGA_VGA_GAME/blob/main/images/basys3.jpg?raw=true" width="550" title="basys3">
+  <br><em>Basys3 FPGA board</em>
+</p>
 
 ## About : Development
 The code was written for the Basys3 FPGA board using verilog and Vivado Design Studio. The code utilizes the built-in VGA port on the board for interfacing with VGA monitors.
