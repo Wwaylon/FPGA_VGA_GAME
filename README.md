@@ -4,11 +4,6 @@ If a fruit reaches the floor, the player loses a life point. At zero life points
 The player is scored on how many fruits they catch within 3 lives. 
 At 50 points, the speed at which fruits fall doubles, increasing overall difficulty.
 
-<p align="center">
-  <img src="https://github.com/Wwaylon/FPGA_VGA_GAME/blob/main/images/catchthefruit1.jpg?raw=true" width="800" title="Catch The Fruit Image">
-  <br><em>Photo of the game</em>
-</p>
-
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![gif](https://github.com/Wwaylon/FPGA_VGA_GAME/blob/main/images/gif.gif?raw=true)](https://drive.google.com/file/d/1dU0x5I3jarGUIz8Yi9yZep13Qqnc5u1P/view?usp=drive_link)
 <p align="center">
 Find the full video <a href="https://drive.google.com/file/d/1dU0x5I3jarGUIz8Yi9yZep13Qqnc5u1P/view?usp=sharing">here </a>
