@@ -10,7 +10,7 @@ The player is scored on how many fruits they catch within 3 lives.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![gif](https://github.com/Wwaylon/FPGA_VGA_GAME/blob/main/images/gif.gif?raw=true)](https://drive.google.com/file/d/1dU0x5I3jarGUIz8Yi9yZep13Qqnc5u1P/view?usp=drive_link)
 <p align="center">
-<br>Find the full video <a src="https://drive.google.com/file/d/1dU0x5I3jarGUIz8Yi9yZep13Qqnc5u1P/view?usp=sharing">here </a>
+Find the full video <a href="https://drive.google.com/file/d/1dU0x5I3jarGUIz8Yi9yZep13Qqnc5u1P/view?usp=sharing">here </a>
 </p>
 
 ## Controls
