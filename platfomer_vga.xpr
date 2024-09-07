@@ -214,8 +214,10 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../vga_platformer/VGA_Platformer.srcs/sources_1/new/vga_timing.v">
+      <File Path="$PSRCDIR/sources_1/imports/new/vga_timing.v">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../vga_platformer/VGA_Platformer.srcs/sources_1/new/vga_timing.v"/>
+          <Attr Name="ImportTime" Val="1715305711"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -243,8 +245,10 @@
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
       <Filter Type="Constrs"/>
-      <File Path="$PPRDIR/../vga_platformer/VGA_Platformer.srcs/constrs_1/new/basys3_constraint.xdc">
+      <File Path="$PSRCDIR/constrs_1/imports/new/basys3_constraint.xdc">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../vga_platformer/VGA_Platformer.srcs/constrs_1/new/basys3_constraint.xdc"/>
+          <Attr Name="ImportTime" Val="1716085750"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
         </FileInfo>
