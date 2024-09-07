@@ -33,5 +33,5 @@ The resistor ladder built-in on the board supports 12 bit color(4 red, 4 green, 
 
 
 ## Credit 
--Joey at https://embeddedthoughts.com/2016/07/30/storing-image-data-in-block-ram-on-a-xilinx-fpga/ for the origin Image to BRAM script that I edited for my purposes.
+-Joey at https://embeddedthoughts.com/2016/07/30/storing-image-data-in-block-ram-on-a-xilinx-fpga/ for the original image to BRAM script that I edited for my purposes.
 
